@@ -1,0 +1,163 @@
+{
+    "globalInformations":{
+        "firstname":"Christopher",
+        "lastname":"LE BLOAS",
+        "address" : "27 avenue Gallieni, 92400 Courbevoie",
+        "mobile": "0637157690",
+        "email":"christopher.le_bloas@insa-rouen.fr",
+        "dateOfBirth": "1988-03-02",
+        "complementaryInformation":"Permis B"
+    },
+    "title": "Ingénieur développement logiciel",
+    "title2": "Sens de l'écoute, travail en équipe, force de proposition",
+    "professionalExperiences":[
+        {
+            "companyName":"Thales services (Client: Thales Communication)",
+            "role" : "Développeur-Concepteur",
+            "startDate":"2014-07",
+            "endDate":"2015-03",
+            "mission":"Porter une architecture \"big endian\" vers une architecture \"little endian\" d'un système de radio en binôme | Changement de l'environnement de compilation | Préparation de l'environnement de test afin de s'assurer de la non-régression de l'application| Réalisation d'un framework de test",
+            "environnementTechnique":"C++, QMake, CMake, Java, JUnit, Ant, Bash, Clearcase, Klockwork, Jira, Jenkins"
+        },
+        {
+            "companyName":"Thales services (Client: Thales Communication)",
+            "role" : "Développeur-Concepteur",
+            "startDate":"2013-11",
+            "endDate":"2014-04",
+            "mission":"Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes| Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM",
+            "environnementTechnique":"Java, GWT, OSGi, Karaf(interne), Spring, Scrum, Selenium, Junit, Clearcase, Sonar, Maven, Jira, Jenkins"
+        },
+        {
+            "companyName":"Thales services (Client: DCNS)",
+            "role" : "MCO",
+            "startDate":"2012-12",
+            "endDate":"2013-10",
+            "mission":"Automatisation de tests d'intégration (5mois) | Participation au chiffrage d'un autre périmètre de tests| Traitement et correction de fait techniques |Mise en place de l'environnement d'intégration continu avec pour objectif de le généraliser sur d'autres projets",
+            "environnementTechnique":"Java, Swing, SVN, Maven, XVFB, Sonar, Nexus, Jenkins"
+        },
+        {
+            "companyName":"Thales services (Client: CEA)",
+            "role" : "Réponse à appel d'offre",
+            "startDate":"2012-11",
+            "endDate":"2012-12",
+            "mission":"Refonte d'une application réalisée en Matlab | Recherche, proposition de solutions techniques|Réalisation d'un prototype|Réalisation de compartifs technologiques",
+            "environnementTechnique":"UML, design pattern, JavaFx, Swing, GWT, JQuery"
+        },
+        {
+            "companyName":"Infotel Conseil",
+            "role" : "Stagiaire",
+            "startDate":"2012-02",
+            "endDate":"2012-07",
+            "mission":"Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type|Réalisation du projet de la veille technique à sa démonstration | Développement d'un plugin Firefox",
+            "environnementTechnique":"Spring, Hibernate, Selenium, RabbitMQ, MySQL, Maven, Git"
+        },
+        {
+            "companyName":"INSA Rouen (Client: Bibliothèque Publique d'Informations",
+            "role" : "Etudiant", 
+            "startDate":"2011-01",
+            "endDate":"2011-12",
+            "mission":"Réalisation d'une application certifié ISO9001:2008 pour la bibliothèque nationale George Pompidou| Responsable qualité (Mises en place des exigeances qualités nécessaire)|Réalisation d'uneapplication web permettant la localisation de média|Définition et mise en place de la gestion des configurations| Rédaction des spécifications, de la conception, DTD...",
+            "environnementTechnique":"JavaJEE, Jetty,SVN, JQuery, Cycle en V"
+        },
+        {
+            "companyName":"M.A. Système",
+            "role" : "Stagiaire", 
+            "startDate":"2011-07",
+            "endDate":"2011-08",
+            "mission":"Création d'interfaces utilisateurs permettant la communication avec des robots industriels"
+        },
+        {
+            "companyName":"Darty(intérim)",
+            "role" : "Technicien", 
+            "startDate":"2010-07",
+            "endDate":"2010-09",
+            "mission":"Installation informatique chez les particuliers (relations clients, contraintes temporelles)"
+        },
+        {
+            "companyName":"Sealynx",
+            "role" : "Stagiaire", 
+            "startDate":"2009-07",
+            "endDate":"2009-07",
+            "mission":"Mis en place d'un outil Excel permettant l'autotisation de tâches quotidiennes (macro)"
+        },
+        {
+            "companyName":"Mairie de Rouen",
+            "role" : "Stagiaire", 
+            "startDate":"2008-04",
+            "endDate":"2008-06",
+            "mission":"Mis en place d'un réseau Wi-Fi sécurisé|Identification des besoins|proposition de solutions|Tests et mise en production|rédaction de documentation"
+        },
+        {
+            "companyName":"Technocom (Thuit Signol)",
+            "role" : "Animateur Vacataire", 
+            "startDate":"2007-02",
+            "endDate":"2010-02",
+            "mission":"Décourverte des jeux en réseau, vidéo, sensibilisation à science et aux dangers de l'Internet"
+        }
+    ],
+    "formations":[
+        {
+            "title":"Ingénieur Architecture des Systèmes d'Information",
+            "startDate":2008,
+            "endDate":2012,
+            "School":"INSA de Rouen"
+        },
+        {
+            "title":"Niveau HNC en Electronique",
+            "startDate":"2008-07",
+            "endDate":"2009:-07",
+            "school":"INSA de Rouen",
+            "city":"Wrexham (Royaume-Unis)"
+        },
+        {
+            "title":"DUT Réseaux et Télécommunications",
+            "obtentionDate":"2008-06",
+            "school":"Université de Rouen"
+        }
+    ],
+    "skillsAndLang":[
+        {
+            "categoryName":"Informatique & Electronique",
+            "skills":[
+                "Méthode et technique de programmation structurée et objet (JavaJEE, GWT, C, C++, HTML5)",
+                "Bases de Données (Définition et création de Bases de Données, formulation de requête SQL",
+                "Installation, gestion et protection de réseaux sous différents environnements Linux et Windows",
+                "Maitrise des principaux logiciels de bureautique (Vim, Latex, Suite Microsoft Office, OpenOffice...)",
+                "Electronique, système embarqué (VHDL, capteurs, ...)"
+            ]
+        },
+        {
+            "categoryName":"Conception & Gestion de projet",
+            "skills":[
+                "Gestion de projet (temporelle, humaine, technique et financière",
+                "Sensibilisation à la qualité (norme ISO9001)",
+                "Modélisation UML, Design Pattern, IDEF0"
+            ]
+        },
+        {
+            "categoryName":"Langue",
+            "skills":[
+                "Anglais : bon niveau de compréhension orale et écrite (835 points au TOEIC)"
+            ]
+        }
+    ],
+    "personnalActivities":[   
+        {
+            "title":"BasketBall",
+            "description":"pratique au niveau régional (10 années)"
+        },
+        {
+            "title":"Photographie",
+            "description":"depuis 2ans",
+            "url":"www.flickr.com/photos/120538664@N05"
+        },
+        {
+            "title":"Robotique",
+            "description":"Secrétaire (2ans) de l'Association Robotique INSA. Participation à la coupe de France de Robotique organisée par Euobot"
+        },
+        {
+            "title":"AJIR (Association Junior INSA Rouen)",
+            "description": "Réalisation d'une solution technique consitant à contrôler et programmer une malaxeuse de béton"
+        }
+    ]
+}
