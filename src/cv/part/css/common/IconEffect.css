@@ -1,0 +1,19 @@
+
+/* Effect 7 */
+.hi-icon-effect .hi-icon {
+	box-shadow: 0 0 0 4px rgba(255,255,255,1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;	
+}
+
+.hi-icon-effect .hi-icon:hover {
+	color: #fff;
+}
+
+.hi-icon-effect .hi-icon:after {
+	top: -8px;
+	left: -8px;
+	padding: 8px;
+	z-index: -1;
+}

@@ -1,0 +1,38 @@
+
+.imgCss{
+      width:20em;
+      height:20em;
+}
+
+.mainBlockStyle  {
+    box-shadow: 0em 0em 0.5em #000000;
+    background-color: white;
+}
+
+.marginBlock {
+    display:flex;
+    padding: 3em 3em 3em 3em;
+}
+.icone {
+    /* composes: hi-icon-effect from "./common/IconEffect.css"; */
+    margin: 0em 1em;
+}
+
+.icone > svg {
+    vertical-align:middle;
+}
+
+.listInfo {
+    list-style:none;
+    padding-left:0;
+}
+.listInfoItem{display:flex;margin-bottom:1em; font-size:0.9em}
+
+.contTypeStyle {font-weight:bold; width:8em; text-transform: uppercase;}
+.contStyle {font-weight:bold; color:#455A64;}
+
+.footer{
+    background-color:#455A64; height:3em; display:flex; align-items:center; justify-content:center
+}
+
+.descriptionBloc { border-bottom: 1px solid #dedede; height:6em}

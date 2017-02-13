@@ -3,13 +3,15 @@
         "firstname":"Christopher",
         "lastname":"LE BLOAS",
         "address" : "27 avenue Gallieni, 92400 Courbevoie",
-        "mobile": "0637157690",
+        "mobile": "06 37 15 76 90",
         "email":"christopher.le_bloas@insa-rouen.fr",
         "dateOfBirth": "1988-03-02",
-        "complementaryInformation":"Permis B"
+        "complementaryInformation":"Permis B",
+        "regions":"Haute-Normandie, Ile-de-France"
     },
     "title": "Ingénieur développement logiciel",
     "title2": "Sens de l'écoute, travail en équipe, force de proposition",
+    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Je suis spécialisé dans Java (Spring). Je reste curieux sur les stacks récentes front-end (React). J'attache beaucoup d'importance à qualité du developpement (intégration continue).",
     "professionalExperiences":[
         {
             "companyName":"Thales services (Client: Thales Communication)",
