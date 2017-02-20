@@ -3,7 +3,6 @@ import MainBlock from './MainBlock';
 class ProfessionnalSkills extends Component {
     render() {
     var listeStyle = {
-      padding:'1em 2em 1em 2em',
       display:'flex',
       flexFlow:'row wrap',
       justifyContent: 'space-around',
