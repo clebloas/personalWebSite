@@ -1,17 +1,8 @@
 import React, {Component} from 'react';
-
+import MainBlock from './MainBlock'
 class ProfessionnalExperience extends Component {
     render() {
 
-        var mainBlockStyle = {
-            boxShadow: '0em 0em 0.5em #000000',
-            backgroundColor: 'white',
-            marginTop: '2em',
-            padding: '1em 2em 1em 2em',
-            display: 'flex',
-            flexFlow: 'row wrap',
-            justifyContent: 'space-around'
-        }
 
         return (
             <div style={{
@@ -23,7 +14,7 @@ class ProfessionnalExperience extends Component {
                     color: '#657A84',
                     textAlign: 'center'
                 }}>Expériences professionnelles</div>
-                <div style={mainBlockStyle}></div>
+                <MainBlock ></MainBlock>
             </div>
         );
         /*
