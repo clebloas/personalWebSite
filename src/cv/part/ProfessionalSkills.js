@@ -17,7 +17,7 @@ class ProfessionnalSkills extends Component {
         return (
         <div style={{marginTop:'4em'}}>
                 <div style={{fontSize:'2em', color:'#657A84', textAlign:'center'}}>Compétences professionnelles</div>
-                <MainBlock >
+                <MainBlock showHeader='true'>
                     <div style={listeStyle}>
                     {comps.map((comp, index) => 
                         <div key={index} style={{width:'40%', margin:'1em 2em 1em 1em'}}>

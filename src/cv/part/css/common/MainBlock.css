@@ -1,16 +1,23 @@
-
-.mainBlockStyle  {
+.mainBlockStyle {
     box-shadow: 0em 0em 0.5em #000000;
     background-color: white;
     margin-top: 1em;
 }
 
 .marginBlock {
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding: 3em 3em 3em 3em;
 }
 
-.footer{
-    background-color:#455A64; 
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #455A64;
+}
+
+.header {
+    height: 0.5em;
+    background-color: #455A64;
 }

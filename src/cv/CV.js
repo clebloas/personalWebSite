@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import GlobalInfo from './part/GlobalInfo';
 //import Title from './part/Title';
-import ProfessionalExperiences from './part/ProfessionalExperience';
+import ProfessionalExperiences from './part/ProfessionalExperiences';
 import ProfessionalSkills from './part/ProfessionalSkills';
 //import Formations from './part/Formations';
 //import Skills from './part/Skills';

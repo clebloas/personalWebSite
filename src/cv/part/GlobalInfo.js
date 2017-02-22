@@ -33,8 +33,8 @@ class GlobalInfo extends Component {
     ]
 
     return (
-      <MainBlock footer={(
-          <div className={style.footer}>
+      <MainBlock showFooter='true' footer={(
+          <div>
             <a className={style.icone} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/"><Linkedin height='2em' width='2em'/></a>
             <a className={style.icone} href="https://github.com/clebloas"><Github height='2em' width='2em'/></a>
             <a className={style.icone} href="https://www.facebook.com/clebloas"><Facebook height='2em' width='2em'/></a>
