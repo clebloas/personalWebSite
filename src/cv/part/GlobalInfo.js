@@ -18,7 +18,7 @@ class GlobalInfo extends Component {
     return string
       .replace('@', '[at]')
       .replace(/\./g,'[dot]')
-      .replace(/0/g,'[zero]');
+      .replace(/0/g,'[O]');
   }
   
   render() {

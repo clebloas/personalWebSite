@@ -1,0 +1,34 @@
+.shadowBlock {
+    box-shadow: 0em 0em 0.5em #000000;
+    background-color: white;
+    margin-top: 1em;
+}
+
+.header {
+    width:100%;
+    background-color: #455A64;
+}
+.header>div{
+    padding:0em 1em;
+    color:white;
+    display: flex;
+    flex-direction: row;
+}
+
+.companyName{
+
+}
+.role{
+
+}
+.date{
+}
+
+
+.footer{
+    background-color: #657A84;
+    color:white;
+}
+.footer>div{
+    padding:0em 1em;
+}

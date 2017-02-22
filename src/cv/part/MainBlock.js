@@ -17,7 +17,7 @@ class MainBlock extends Component {
 
     render(){
         return (
-            <div className={MainBlockStyle.mainBlockStyle}>
+            <div className={MainBlockStyle.shadowBox}>
                 <div className={this.getHeaderClass()}>{this.props.header}</div>
 
                 <div className={MainBlockStyle.marginBlock}>
