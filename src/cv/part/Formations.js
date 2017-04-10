@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-/*
-import {Card, CardTitle, CardText} from 'material-ui/Card';
+import Formation from './Formation';
+
 class Formations extends Component {
     render() {
         return (
@@ -8,18 +8,14 @@ class Formations extends Component {
                 {this
                     .props
                     .formations
-                    .map((formation, index) => <Card key={index}>
-                        <CardTitle
+                    .map((formation, index) =>
+                     <Formation key={index}
                             title={formation.title}
-                            subtitle={formation.startDate + "-" + formation.endDate}/>
-                        <CardText>
-                            <div className="school">{formation.school}</div>
-                            <div className="city">{formation.city}</div>
-                        </CardText>
-                    </Card>)}
+                            date={formation.startDate + "-" + formation.endDate}
+                            school={formation.school}
+                            city={formation.city} />)}
             </div>
         );
     }
 }
 export default Formations;
-*/

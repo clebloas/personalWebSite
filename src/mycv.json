@@ -106,15 +106,15 @@
         },
         {
             "title":"Niveau HNC en Electronique",
-            "startDate":"2008-07",
-            "endDate":"2009:-07",
-            "school":"INSA de Rouen",
+            "obtentionDate":2008,
+            "school":"NEWI",
             "city":"Wrexham (Royaume-Unis)"
         },
         {
             "title":"DUT Réseaux et Télécommunications",
-            "obtentionDate":"2008-06",
-            "school":"Université de Rouen"
+            "obtentionDate":2008,
+            "school":"Université de Rouen",
+            "City": "Saint-Etienne du Rouvray"
         }
     ],
     "skillsAndLang":[

@@ -3,7 +3,7 @@ import GlobalInfo from './part/GlobalInfo';
 //import Title from './part/Title';
 import ProfessionalExperiences from './part/ProfessionalExperiences';
 import ProfessionalSkills from './part/ProfessionalSkills';
-//import Formations from './part/Formations';
+import Formations from './part/Formations';
 //import Skills from './part/Skills';
 //import PersonalActivities from './part/PersonalActivities'
 import Description from './part/Description';
@@ -40,9 +40,9 @@ class CV extends Component {
 }
 
 /*
-        <Title title={cvDatas.title} title2={cvDatas.title2}/>
+        <Title title={cvDatas.title} title2={cvDatas.title2}/>*/
         <Formations formations={formations}/>
-        <Skills skills={skills}/>
+        /*<Skills skills={skills}/>
         <PersonalActivities personnalActivities={personnalActivities}/>
 
  */

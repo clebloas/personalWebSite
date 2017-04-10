@@ -19,7 +19,7 @@ class ProfessionalExperience extends Component {
         );
     }
     getBody(){
-        return (<ul>{this.props.mission.split('|').map((task,index) => {
+        return (<ul className={style.liste}>{this.props.mission.split('|').map((task,index) => {
                 return (<li key={index}>{task}</li>);
             })
         }</ul>);

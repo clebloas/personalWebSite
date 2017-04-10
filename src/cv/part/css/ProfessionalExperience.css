@@ -8,27 +8,43 @@
     width:100%;
     background-color: #455A64;
 }
+
 .header>div{
     padding:0em 1em;
     color:white;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
 
 .companyName{
-
+    align-self: flex-start;
+    flex-grow: 1;
 }
+
 .role{
+    margin-right:3em;
 
 }
+
 .date{
+    align-self: flex-end;
 }
-
 
 .footer{
-    background-color: #657A84;
-    color:white;
+    background-color: #90A4AE;
+    color:white;    
 }
+
 .footer>div{
-    padding:0em 1em;
+    padding-left:1em;
+    padding-right:1em;
 }
+
+.liste{
+    padding-bottom:1em; 
+    margin-bottom:0;
+    
+}
+
+
