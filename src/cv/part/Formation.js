@@ -16,7 +16,7 @@ class Formation extends Component{
     getBody(){
         return (
         <ul className={style.liste}>{
-            this.props.mission.split('|').map((task,index) => (<li key={index}>{task}</li>))
+            //this.props.mission.split('|').map((task,index) => (<li key={index}>{task}</li>))
         }
         </ul>);
     }

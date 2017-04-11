@@ -13,7 +13,7 @@ import './fonts.css';
 class CV extends Component {
   render() {
     var expProfessionals = cvDatas.professionalExperiences;
-    //var formations = cvDatas.formations;
+    var formations = cvDatas.formations;
     //var skills = cvDatas.skillsAndLang;
     //var personnalActivities = cvDatas.personnalActivities;
     return (
@@ -33,6 +33,7 @@ class CV extends Component {
           <Description description={cvDatas.description}/>
           <ProfessionalSkills />
           <ProfessionalExperiences expProfessionals={expProfessionals}/>
+          <Formations formations={formations}/>
         </div>
       </div>
     );
@@ -41,7 +42,6 @@ class CV extends Component {
 
 /*
         <Title title={cvDatas.title} title2={cvDatas.title2}/>*/
-        <Formations formations={formations}/>
         /*<Skills skills={skills}/>
         <PersonalActivities personnalActivities={personnalActivities}/>
 

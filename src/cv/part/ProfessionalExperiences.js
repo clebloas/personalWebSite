@@ -7,7 +7,7 @@ class ProfessionnalExperiences extends Component {
         return (
             <div style={{marginTop: '4em'}}>
                 <div style={{fontSize: '2em',color: '#657A84',textAlign: 'center'}}>Expériences professionnelles</div>
-                <div class={style.organizer}>
+                <div className={style.organizer}>
                 {this.props.expProfessionals.map((expPro, index) => 
                     <ProfessionnalExperience key={index}
                         companyName={expPro.companyName}
