@@ -40,6 +40,7 @@ class GlobalInfo extends Component {
             <a className={style.icone} href="https://www.facebook.com/clebloas"><Facebook height='2em' width='2em'/></a>
           </div>
         )}>
+
           <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
           <div style={{marginLeft:'2em', flex:'auto'}}>
             <div className={style.descriptionBloc}>
@@ -56,11 +57,6 @@ class GlobalInfo extends Component {
           </div>
       </MainBlock>
     )}
-        
-         
-        
-    
-  
 };
 
 export default GlobalInfo;
