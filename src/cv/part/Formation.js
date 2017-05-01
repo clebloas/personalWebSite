@@ -2,29 +2,25 @@ import React, {Component} from 'react';
 import style from './css/Formation.css';
 
 class Formation extends Component{
-    getHeader(){
-    return (
-            <div className={style.header}>
-                <div>
-                    <span className={style.school}>{this.props.school}</span>
-                    <span className={style.title}>{this.props.title}</span>
-                    <span className={style.date}>{this.props.obtentionDate}</span>
-                </div>
-            </div>
+    getIcon(){
+        return (
+            <a href={this.props.link} style={{ margin:'auto', display:'block'}}>
+                <img alt={this.props.school} src={this.props.icon} className={style.logo}/>
+            </a>
         );
     }
-    getBody(){
-        return (
-        <ul className={style.liste}>{
-            //this.props.mission.split('|').map((task,index) => (<li key={index}>{task}</li>))
-        }
-        </ul>);
-    }
+
     render(){
         return (
             <div className={style.shadowBlock}>
-                {this.getHeader()}
-                {this.getBody()}
+                <div className={style.content}>
+                    <div>
+                        <span className={style.date}>{this.props.obtentionDate}</span>
+                        <span className={style.school}>{this.props.school}</span>
+                    </div>
+                    <div className={style.title}>{this.props.title}</div>
+                </div>
+                <div style={{display:'flex'}} >{this.getIcon()}</div>
             </div>
         );
     }

@@ -100,21 +100,26 @@
     "formations":[
         {
             "title":"Ingénieur Architecture des Systèmes d'Information",
-            "startDate":2008,
-            "endDate":2012,
-            "School":"INSA de Rouen"
+            "obtentionDate":2012,
+            "school":"INSA de Rouen",
+            "icon": "http://asi.insa-rouen.fr/sites/default/files/logoinsa-250px_0.jpg",
+            "link": "http://asi.insa-rouen.fr/"
         },
         {
             "title":"Niveau HNC en Electronique",
             "obtentionDate":2008,
-            "school":"NEWI",
-            "city":"Wrexham (Royaume-Unis)"
+            "school":"NEWI (ancien nom)",
+            "city":"Wrexham (Royaume-Unis)",
+            "icon": "http://www.wrexham.com/wp-content/uploads/2016/02/wrexham-glyndwr-university-1-800x438.jpg",
+            "link": "https://www.glyndwr.ac.uk"
         },
         {
             "title":"DUT Réseaux et Télécommunications",
             "obtentionDate":2008,
             "school":"Université de Rouen",
-            "City": "Saint-Etienne du Rouvray"
+            "City": "Saint-Etienne du Rouvray",
+            "icon": "http://iutrouen.univ-rouen.fr/images/logo.png",
+            "link": "http://iutrouen.univ-rouen.fr/dut-reseaux-et-telecommunications-351515.kjsp?RH=1384872557511"
         }
     ],
     "skillsAndLang":[
