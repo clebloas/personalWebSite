@@ -17,7 +17,7 @@ class Formations extends Component {
                                 school={formation.school}
                                 city={formation.city}
                                 obtentionDate={formation.obtentionDate}
-                                icon={formation.icon}
+                                logo={formation.logo}
                                 link={formation.link}
                                 />)}
                 </div>

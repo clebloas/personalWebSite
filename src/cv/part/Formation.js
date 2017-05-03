@@ -5,7 +5,7 @@ class Formation extends Component{
     getIcon(){
         return (
             <a href={this.props.link} style={{ margin:'auto', display:'block'}}>
-                <img alt={this.props.school} src={this.props.icon} className={style.logo}/>
+                <img alt={this.props.school} src={this.props.logo} className={style.logo}/>
             </a>
         );
     }

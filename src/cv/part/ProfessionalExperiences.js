@@ -16,6 +16,7 @@ class ProfessionnalExperiences extends Component {
                         endDate={expPro.endDate}
                         mission={expPro.mission}
                         environnementTechnique={expPro.environnementTechnique}
+                        logo={expPro.logo}
                             />)}
                 </div>
             </div>

@@ -6,30 +6,37 @@ class ProfessionalExperience extends Component {
         return (
             <div className={style.header}>
                 <div>
-                    <span className={style.companyName}>{this.props.companyName}</span>
-                    <span className={style.role}>{this.props.role}</span>
-                    <span className={style.date}><span>{this.props.startDate}</span><span>{this.props.endDate}</span></span>
+                    <div className={style.datecompany}>
+                        <div className={style.date}>{this.props.startDate}/{this.props.endDate}</div>
+                        <div className={style.companyName}>{this.props.companyName}</div>
+                    </div>
+                    <div className={style.role}>{this.props.role}</div>
                 </div>
+                <img alt={this.props.school} src={this.props.logo} className={style.logo}/>
             </div>
         );
     }
-    getFooter(){
+    getEnvironment(){
         return (
-            <div className={style.footer}><div>{this.props.environnementTechnique}</div></div>
+            <div className={style.environment}><div>{this.props.environnementTechnique}</div></div>
         );
     }
-    getBody(){
-        return (<ul className={style.liste}>{this.props.mission.split('|').map((task,index) => {
-                return (<li key={index}>{task}</li>);
-            })
-        }</ul>);
+
+    getContent(){
+        return (
+            <ul className={style.liste}>
+                    {this.props.mission.split('|').map((task,index) => {
+                        return (<li key={index}>{task}</li>);
+                    })}
+            </ul>)
     }
+
     render(){
         return (
             <div className={style.shadowBlock}>
                 {this.getHeader()}
-                {this.getBody()}
-                {this.getFooter()}
+                {this.getContent()}
+                {this.getEnvironment()}
             </div>
         );
     }

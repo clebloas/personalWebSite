@@ -14,8 +14,6 @@ class CV extends Component {
   render() {
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
-    //var skills = cvDatas.skillsAndLang;
-    //var personnalActivities = cvDatas.personnalActivities;
     return (
     <div>
         <img src="https://vignette1.wikia.nocookie.net/eastenders/images/f/f6/Under-construction.png/revision/latest?cb=20141120185311" 
@@ -50,10 +48,4 @@ class CV extends Component {
   }
 }
 
-/*
-        <Title title={cvDatas.title} title2={cvDatas.title2}/>*/
-        /*<Skills skills={skills}/>
-        <PersonalActivities personnalActivities={personnalActivities}/>
-
- */
 export default CV;

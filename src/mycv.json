@@ -15,6 +15,7 @@
     "professionalExperiences":[
         {
             "companyName":"Thales services (Client: Thales Communication)",
+            "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Thales_Logo.svg/1600px-Thales_Logo.svg.png",
             "role" : "Développeur-Concepteur",
             "startDate":"2014-07",
             "endDate":"2015-03",
@@ -23,6 +24,7 @@
         },
         {
             "companyName":"Thales services (Client: Thales Communication)",
+            "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Thales_Logo.svg/1600px-Thales_Logo.svg.png",
             "role" : "Développeur-Concepteur",
             "startDate":"2013-11",
             "endDate":"2014-04",
@@ -31,6 +33,7 @@
         },
         {
             "companyName":"Thales services (Client: DCNS)",
+            "logo":"https://upload.wikimedia.org/wikipedia/fr/2/2f/Logo_dcns.png",
             "role" : "MCO",
             "startDate":"2012-12",
             "endDate":"2013-10",
@@ -39,6 +42,7 @@
         },
         {
             "companyName":"Thales services (Client: CEA)",
+            "logo":"http://nanosaclay.fr/Images/Logos/logoCEA_en_quadri_rouge.jpg",
             "role" : "Réponse à appel d'offre",
             "startDate":"2012-11",
             "endDate":"2012-12",
@@ -47,6 +51,7 @@
         },
         {
             "companyName":"Infotel Conseil",
+            "logo": "http://www.lemansdeveloppement.fr/wp-content/uploads/2016/02/logo-INFOtel.png",
             "role" : "Stagiaire",
             "startDate":"2012-02",
             "endDate":"2012-07",
@@ -54,7 +59,8 @@
             "environnementTechnique":"Spring, Hibernate, Selenium, RabbitMQ, MySQL, Maven, Git"
         },
         {
-            "companyName":"INSA Rouen (Client: Bibliothèque Publique d'Informations",
+            "companyName":"INSA Rouen (Client: Bibliothèque Publique d'Informations)",
+            "logo": "http://asi.insa-rouen.fr/sites/default/files/logoinsa-250px_0.jpg",
             "role" : "Etudiant", 
             "startDate":"2011-01",
             "endDate":"2011-12",
@@ -70,6 +76,7 @@
         },
         {
             "companyName":"Darty(intérim)",
+            "logo": "http://www.darty.com/static/B-jU/desktop2/common/images/darty_sprite/sprite_darty_logo.png",
             "role" : "Technicien", 
             "startDate":"2010-07",
             "endDate":"2010-09",
@@ -77,6 +84,7 @@
         },
         {
             "companyName":"Sealynx",
+            "logo": "http://nouform.com/wp-content/uploads/2015/11/sealynx.png",
             "role" : "Stagiaire", 
             "startDate":"2009-07",
             "endDate":"2009-07",
@@ -84,6 +92,7 @@
         },
         {
             "companyName":"Mairie de Rouen",
+            "logo": "http://www.festival-livre-rouen.fr/wp-content/uploads/2016/09/logo-rouen-horizontal-cmjn-4359x1228-300x85.jpg",
             "role" : "Stagiaire", 
             "startDate":"2008-04",
             "endDate":"2008-06",
@@ -91,6 +100,7 @@
         },
         {
             "companyName":"Technocom (Thuit Signol)",
+            "logo": "http://www.afjv.com/2017/02/170208-technocom.jpg",
             "role" : "Animateur Vacataire", 
             "startDate":"2007-02",
             "endDate":"2010-02",
@@ -102,7 +112,7 @@
             "title":"Ingénieur Architecture des Systèmes d'Information",
             "obtentionDate":2012,
             "school":"INSA de Rouen",
-            "icon": "http://asi.insa-rouen.fr/sites/default/files/logoinsa-250px_0.jpg",
+            "logo": "http://asi.insa-rouen.fr/sites/default/files/logoinsa-250px_0.jpg",
             "link": "http://asi.insa-rouen.fr/"
         },
         {
@@ -110,7 +120,7 @@
             "obtentionDate":2008,
             "school":"NEWI (ancien nom)",
             "city":"Wrexham (Royaume-Unis)",
-            "icon": "http://www.wrexham.com/wp-content/uploads/2016/02/wrexham-glyndwr-university-1-800x438.jpg",
+            "logo": "http://www.wrexham.com/wp-content/uploads/2016/02/wrexham-glyndwr-university-1-800x438.jpg",
             "link": "https://www.glyndwr.ac.uk"
         },
         {
@@ -118,7 +128,7 @@
             "obtentionDate":2008,
             "school":"Université de Rouen",
             "City": "Saint-Etienne du Rouvray",
-            "icon": "http://iutrouen.univ-rouen.fr/images/logo.png",
+            "logo": "http://iutrouen.univ-rouen.fr/images/logo.png",
             "link": "http://iutrouen.univ-rouen.fr/dut-reseaux-et-telecommunications-351515.kjsp?RH=1384872557511"
         }
     ],
