@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MainBlock from './MainBlock';
+import MainBlock from '../MainBlock';
 class ProfessionnalSkills extends Component {
     render() {
     var listeStyle = {

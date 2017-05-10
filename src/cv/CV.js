@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import GlobalInfo from './part/GlobalInfo';
+import GlobalInfo from './part/GlobalInfo/GlobalInfo';
 //import Title from './part/Title';
-import ProfessionalExperiences from './part/ProfessionalExperiences';
-import ProfessionalSkills from './part/ProfessionalSkills';
-import Formations from './part/Formations';
+import ProfessionalExperiences from './part/ProfessionalExperiences/ProfessionalExperiences';
+import ProfessionalSkills from './part/ProfessionalSkills/ProfessionalSkills';
+import Formations from './part/Formations/Formations';
 //import Skills from './part/Skills';
 //import PersonalActivities from './part/PersonalActivities'
-import Description from './part/Description';
+import Description from './part/Description/Description';
 import cvDatas from '../mycv.json';
 import './fonts.css';
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from './css/Formation.css';
+import style from './Formation.css';
 
 class Formation extends Component{
     getIcon(){
