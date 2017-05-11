@@ -26,13 +26,8 @@ class CV extends Component {
                 display:'block', 
                 zIndex: '10'
               }}/>
-        <div style={{left:'0', top:'0', width:'100%', height:'27em', backgroundColor:'#455A64', margin:'auto', position:'absolute', zIndex:'-1'}}/>
         <div style={{
           display:'flex',
-          alignItems:'stretch',
-          margin:'4em auto auto auto',
-          minWidth:'50em',
-          maxWidth:'60em',
           flexDirection:'column',
         }}>
           <GlobalInfo 

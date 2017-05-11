@@ -1,11 +1,16 @@
-import React, {Component} from 'react';
+import React         from 'react';
 import Formation from './Formation';
+import ColorBlock from '../ColorBlock/ColorBlock';
+import Title from '../Title/Title';
 
-class Formations extends Component {
-    render() {
+class Formations extends ColorBlock {
+    getColor(){
+        return '#ffffff';
+    }
+    renderContent() {
         return (
             <div style={{marginTop: '4em'}}>
-                <div style={{fontSize: '2em',color: '#657A84',textAlign: 'center'}}>Formations</div>
+                <Title value="Formations"/>
                 <div id="formations">
                     {this
                         .props

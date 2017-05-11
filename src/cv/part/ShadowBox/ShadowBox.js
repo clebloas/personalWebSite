@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MainBlockStyle from './css/common/MainBlock.css';
+import MainBlockStyle from './style.css';
 
 class MainBlock extends Component {
     getHeaderClass(){

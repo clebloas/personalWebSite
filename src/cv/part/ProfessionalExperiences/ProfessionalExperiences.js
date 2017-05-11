@@ -1,12 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ProfessionnalExperience from './ProfessionalExperience';
 import style from './ProfessionalExperiences.css';
+import ColorBlock from '../ColorBlock/ColorBlock';
+import Title from '../Title/Title';
 
-class ProfessionnalExperiences extends Component {
-    render() {
+class ProfessionnalExperiences extends ColorBlock {
+    getColor(){
+        return 'white';
+    }
+    renderContent() {
         return (
             <div style={{marginTop: '4em'}}>
-                <div style={{fontSize: '2em',color: '#657A84',textAlign: 'center'}}>Expériences professionnelles</div>
+                <Title value='Expériences professionnelles'/>
                 <div className={style.organizer}>
                 {this.props.expProfessionals.map((expPro, index) => 
                     <ProfessionnalExperience key={index}

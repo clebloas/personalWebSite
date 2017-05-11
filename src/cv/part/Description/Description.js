@@ -1,13 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
+import ColorBlock from '../ColorBlock/ColorBlock';
 
-
-class Description extends Component{
-    render(){
-    var mainBlockStyle = {
-      fontSize:'1.5em',
-      marginTop:'2em',
-      textAlign:'center'
+class Description extends ColorBlock{
+    getColor(){
+        return 'white';
     }
+
+    renderContent(){
+        var mainBlockStyle = {
+            fontSize:'1.5em',
+            textAlign:'center',
+            color:'black'
+        }
         return(
             <div style={mainBlockStyle}>{this.props.description}</div>
         );
@@ -15,22 +19,3 @@ class Description extends Component{
 }
 
 export default Description;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
