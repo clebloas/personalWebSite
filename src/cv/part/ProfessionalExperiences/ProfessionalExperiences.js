@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import ProfessionnalExperience from './ProfessionalExperience';
-import style from './css/ProfessionalExperiences.css';
+import style from './ProfessionalExperiences.css';
 
 class ProfessionnalExperiences extends Component {
     render() {

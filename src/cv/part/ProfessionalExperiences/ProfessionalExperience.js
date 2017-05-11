@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import style from './css/ProfessionalExperience.css';
+import style from './ProfessionalExperience.css';
 
 class ProfessionalExperience extends Component {
     getHeader(){

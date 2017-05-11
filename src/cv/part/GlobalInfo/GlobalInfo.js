@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 import Linkedin from './logos/linkedin.svg';
 import Github from './logos/github.svg';
 import Facebook from './logos/facebook.svg';
-import style from './css/GlobalInfo.css';
-import MainBlock from './MainBlock';
+import style from './style.css';
+import MainBlock from '../MainBlock';
 
 
 class GlobalInfo extends Component {
@@ -30,14 +30,20 @@ class GlobalInfo extends Component {
       {type:'Adresse', cont:globalInfo.address},
       {type:'Permis', cont:globalInfo.complementaryInformation},
       {type:'Regions', cont:globalInfo.regions},
-    ]
+    ];
 
     return (
       <MainBlock showFooter='true' footer={(
           <div>
-            <a className={style.icone} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/"><Linkedin height='2em' width='2em'/></a>
-            <a className={style.icone} href="https://github.com/clebloas"><Github height='2em' width='2em'/></a>
-            <a className={style.icone} href="https://www.facebook.com/clebloas"><Facebook height='2em' width='2em'/></a>
+            <a className={style.icone} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
+              <Linkedin height='2em' width='2em'/>
+            </a>
+            <a className={style.icone} href="https://github.com/clebloas">
+              <Github height='2em' width='2em'/>
+            </a>
+            <a className={style.icone} href="https://www.facebook.com/clebloas">
+              <Facebook height='2em' width='2em' />
+            </a>
           </div>
         )}>
 
@@ -56,7 +62,8 @@ class GlobalInfo extends Component {
             </div>
           </div>
       </MainBlock>
-    )}
+    );
+  }
 };
 
 export default GlobalInfo;
