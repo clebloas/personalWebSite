@@ -36,13 +36,13 @@ class GlobalInfo extends Component {
       <MainBlock showFooter='true' footer={(
           <div>
             <a className={style.icone} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
-              <object data={{Linkedin}} height='2em' width='2em' type="image/svg+xml"/>
+              <Linkedin height='2em' width='2em'/>
             </a>
             <a className={style.icone} href="https://github.com/clebloas">
-              <object data={{Github}} height='2em' width='2em' type="image/svg+xml"/>
+              <Github height='2em' width='2em'/>
             </a>
             <a className={style.icone} href="https://www.facebook.com/clebloas">
-              <object data={{Facebook}} height='2em' width='2em' type="image/svg+xml"/>
+              <Facebook height='2em' width='2em' />
             </a>
           </div>
         )}>
