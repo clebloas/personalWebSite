@@ -30,7 +30,7 @@ class GlobalInfo extends ColorBlock {
   renderBackground(){
       return (
       <div >
-        <div style={{left:'0em', top:'0', width:'150%', height:'28em', backgroundColor:'#455A64', margin:'auto', position:'absolute', zIndex:'-1'}}/>
+        <div style={{left:'0em', top:'0', width:'100%', height:'28em', backgroundColor:'#455A64', margin:'auto', position:'absolute', zIndex:'-1'}}/>
       </div>);
   }
   
