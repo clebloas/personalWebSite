@@ -17,13 +17,9 @@ class ColorBlock extends Component{ // Abstract class
 
     render(){
         return (
-            <div style={{backgroundColor:this.getColor(), zIndex:'-2'}}>
+            <div style={{backgroundColor:this.getColor()}}>
                 {(this.renderBackground !== undefined)? this.renderBackground():""}
-                <div style={{
-                        minWidth:'50em',
-                        maxWidth:'60em',
-                        margin:'1em auto'
-                        }}>
+                <div>
                     {this.renderContent()}
                 </div>
             </div>

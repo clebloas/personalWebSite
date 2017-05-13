@@ -9,36 +9,51 @@ import Formations from './part/Formations/Formations';
 import Description from './part/Description/Description';
 import cvDatas from '../mycv.json';
 import './fonts.css';
+import Menu from './menu/Menu';
+import style from './style.css';
+import List from './list/List';
 
 class CV extends Component {
-  render() {
+  renderContentList(){
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
+    return(
+          <List activeId='item_GlobalInfo'
+           items={[
+            <GlobalInfo 
+              key='item_GlobalInfo'
+              globalInformations={cvDatas.globalInformations}
+              title={cvDatas.title}/>,
+            <Description 
+              key='item_Description'
+              description={cvDatas.description}/>,
+            <ProfessionalSkills
+              key='item_ProfessionalSkills'/>,
+            <ProfessionalExperiences
+              expProfessionals={expProfessionals}
+              key='item_ProfessionalExperiences'/>,
+            <Formations 
+              formations={formations}
+              key='item_Formations'/>]}/>
+    );
+  }
+
+  render() {
+    var contentList=this.renderContentList();
     return (
     <div>
-        <img src="https://vignette1.wikia.nocookie.net/eastenders/images/f/f6/Under-construction.png/revision/latest?cb=20141120185311" 
-              alt="Page en cours de construction"
-              height='200em'
-              style={{
-                position:'absolute',
-                left:'5em',
-                top:'2em',
-                display:'block', 
-                zIndex: '10'
-              }}/>
-        <div style={{
-          display:'flex',
-          flexDirection:'column',
-        }}>
-          <GlobalInfo 
-            globalInformations={cvDatas.globalInformations}
-            title={cvDatas.title}/>
-          <Description description={cvDatas.description}/>
-          <ProfessionalSkills />
-          <ProfessionalExperiences expProfessionals={expProfessionals}/>
-          <Formations formations={formations}/>
+      <div className={style.menu}>
+        <div className={style.menuContent}>
+          <Menu list={contentList}/>
         </div>
       </div>
+     
+      <div className={style.main} >
+        <div className={style.content}>
+          {contentList}
+        </div>
+      </div>
+    </div>
     );
   }
 }
