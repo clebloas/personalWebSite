@@ -4,9 +4,6 @@ import ColorBlock from '../ColorBlock/ColorBlock';
 import Title from '../Title/Title';
 
 class ProfessionnalSkills extends ColorBlock {
-    getColor(){
-        return 'white';
-    }
     renderContent() {
         var listeStyle = {
         display:'flex',

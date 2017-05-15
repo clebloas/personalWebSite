@@ -22,11 +22,6 @@ class GlobalInfo extends ColorBlock {
       .replace(/0/g,'[O]');
   }
   
-  getColor(){
-    return 'transparent';
-  }
-  
-  
   renderContent() {
     var globalInfo = this.props.globalInformations;
     var contentList=[

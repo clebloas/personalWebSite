@@ -5,9 +5,6 @@ import ColorBlock from '../ColorBlock/ColorBlock';
 import Title from '../Title/Title';
 
 class ProfessionnalExperiences extends ColorBlock {
-    getColor(){
-        return 'white';
-    }
     renderContent() {
         return (
             <div style={{marginTop: '4em'}}>

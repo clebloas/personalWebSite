@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import style from './style.css';
 class ColorBlock extends Component{ // Abstract class
 
     constructor(props) { 
@@ -10,14 +10,11 @@ class ColorBlock extends Component{ // Abstract class
         if (this.renderContent === undefined) {
             throw new TypeError("Must override renderContent");
         }
-        if (this.getColor === undefined) {
-            throw new TypeError("Must override getColor");
-        }
     };
 
     render(){
         return (
-            <div style={{backgroundColor:this.getColor()}}>
+            <div className={style.fade} >
                 {(this.renderBackground !== undefined)? this.renderBackground():""}
                 <div>
                     {this.renderContent()}

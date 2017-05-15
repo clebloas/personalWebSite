@@ -14,43 +14,52 @@ import style from './style.css';
 import List from './list/List';
 
 class CV extends Component {
+  constructor(props){
+    super(props);
+    this.state={activeContentId:"default"};
+    this.handleChangeContent=this.handleChangeContent.bind(this);
+  }
   renderContentList(){
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
     return(
-          <List activeId='item_GlobalInfo'
-           items={[
+          <List activeContentId={this.state.activeContentId}>
             <GlobalInfo 
               key='item_GlobalInfo'
               globalInformations={cvDatas.globalInformations}
-              title={cvDatas.title}/>,
+              title={cvDatas.title}/>
             <Description 
               key='item_Description'
-              description={cvDatas.description}/>,
+              description={cvDatas.description}/>
             <ProfessionalSkills
-              key='item_ProfessionalSkills'/>,
+              key='item_ProfessionalSkills'/>
             <ProfessionalExperiences
               expProfessionals={expProfessionals}
-              key='item_ProfessionalExperiences'/>,
+              key='item_ProfessionalExperiences'/>
             <Formations 
               formations={formations}
-              key='item_Formations'/>]}/>
+              key='item_Formations'/>
+          </List>
     );
   }
 
+  handleChangeContent(contentId){
+    this.setState({activeContentId: contentId});
+  }
+
   render() {
-    var contentList=this.renderContentList();
+    this.contentList=this.renderContentList();
     return (
     <div>
       <div className={style.menu}>
         <div className={style.menuContent}>
-          <Menu list={contentList}/>
+          <Menu onChangeContentId={this.handleChangeContent} />
         </div>
       </div>
      
       <div className={style.main} >
         <div className={style.content}>
-          {contentList}
+          {this.contentList}
         </div>
       </div>
     </div>
