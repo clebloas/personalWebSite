@@ -1,28 +1,85 @@
 
+.leftPart{
+    composes: col4 from '../../gridview.css';
+    float:left; 
+}
+.rightPart{
+    composes: col8 from '../../gridview.css';
+    float:left;
+    padding-left:2em;
+    flex:auto;
+}
+
 .imgCss{
-      width:20em;
-      height:20em;
-}
-
-.icone {
-    /* composes: hi-icon-effect from "./common/IconEffect.css"; */
-    margin: 0em 1em;
-}
-
-.icone > svg {
-    vertical-align:middle;
-    height: 2.8em;
+    max-width: 100%;
+    height:auto;
+    margin:auto;
 }
 
 .listInfo {
     list-style:none;
     padding-left:0;
+    padding-top:1em;
+    margin: 0;
+
 }
-.listInfoItem{display:flex;margin-bottom:1em; font-size:0.9em}
+.listInfoItem{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:1em;
+    font-size:0.9em;
+}
 
-.contTypeStyle {font-weight:bold; width:8em; text-transform: uppercase;}
-.contStyle {font-weight:bold; color:#455A64;}
+.contTypeStyle {
+    composes: col2 from '../../gridview.css';
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.contStyle {
+    font-weight:bold;
+    color:#455A64;
+}
 
-.descriptionBloc { border-bottom: 1px solid #dedede; height:6em}
+/** Title */
+.descriptionBloc {
+    border-bottom: 1px solid #dedede;
+    padding-bottom:1em;
+}
+.names{
+    font-size:1.8em;
+    font-weight:bolder;
+}
+.jobTitle{
+    font-size:1.4em;
+}
 
-.footer {height:3em; }
+
+/** footer */
+.footer {
+    height:3em;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+}
+
+.iconeLink>svg {
+    vertical-align:middle;
+    margin: 0em 1em;
+    height: 2.8em;
+}
+
+
+/* desktop */
+@media only screen and (min-width: 60em) {
+    .listInfoItem{
+        flex-direction: row;
+    }
+    .listInfo{
+        padding-top:2em;
+    }
+    .descriptionBloc{
+    padding-bottom:2em;
+    }
+}

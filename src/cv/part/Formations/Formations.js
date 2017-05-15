@@ -4,9 +4,6 @@ import ColorBlock from '../ColorBlock/ColorBlock';
 import Title from '../Title/Title';
 
 class Formations extends ColorBlock {
-    getColor(){
-        return '#ffffff';
-    }
     renderContent() {
         return (
             <div style={{marginTop: '4em'}}>

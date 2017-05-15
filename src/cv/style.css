@@ -1,0 +1,17 @@
+.content{
+    composes: col10 from './gridview.css';
+    display:'flex';
+    flex-direction:'column';
+    margin: auto;
+}
+
+.menu{
+    composes: col2 from './gridview.css';
+    margin-top:3em;
+    float:left;
+}
+
+.main{
+    composes: col10 from './gridview.css';
+    float:left;
+}

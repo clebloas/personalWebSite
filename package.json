@@ -45,7 +45,6 @@
   "dependencies": {
     "babel": "^6.23.0",
     "css-loader": "^0.28.1",
-    "jshint": "^2.9.4",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-svg": "^2.1.19",

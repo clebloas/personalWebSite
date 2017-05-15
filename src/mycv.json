@@ -11,8 +11,17 @@
     },
     "title": "Ingénieur développement logiciel",
     "title2": "Sens de l'écoute, travail en équipe, force de proposition",
-    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Spécialisé dans le Java (Spring), je reste curieux sur les stacks récentes front-end (React). J'attache beaucoup d'importance à la qualité du developpement.",
+    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Spécialisé dans le Java (Spring), je reste curieux sur les stacks récentes front-end (React). J'attache beaucoup d'importance à la qualité du développement.",
     "professionalExperiences":[
+        {
+            "companyName":"Weekendesk",
+            "logo" : "http://static.booking.weekendesk.fr/image_cache/A276000/276320/276320_1920_595_FSImage_1_Fuveau_interieur_accueil_o417.jpg",
+            "role" : "Développeur Java",
+            "startDate":"2015-07",
+            "endDate":"2017",
+            "mission":"Réaliser la communication via API avec des partenaires externes | Maintenir et faire évoluer un monolithe vers une architecture en microservice ",
+            "environnementTechnique":"Docker, Kubernetes, Jira, Spring, Spinnaker, Assertj, Cucumber, Maven, Java"
+        },
         {
             "companyName":"Thales services (Client: Thales Communication)",
             "logo" : "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Thales_Logo.svg/1600px-Thales_Logo.svg.png",
@@ -28,7 +37,7 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2013-11",
             "endDate":"2014-04",
-            "mission":"Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes| Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM",
+            "mission":"Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes| Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)",
             "environnementTechnique":"Java, GWT, OSGi, Karaf(interne), Spring, Scrum, Selenium, Junit, Clearcase, Sonar, Maven, Jira, Jenkins"
         },
         {
