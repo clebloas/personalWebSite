@@ -47,6 +47,7 @@
     "css-loader": "^0.28.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-fontawesome": "^1.6.1",
     "react-svg": "^2.1.19",
     "react-svg-loader": "^1.1.1",
     "svg-loader": "^0.0.2",

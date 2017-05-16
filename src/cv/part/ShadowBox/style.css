@@ -7,7 +7,6 @@
 .marginBlock {
     display: flex;
     flex-direction: row;
-    padding: 3em 3em 3em 3em;
 }
 
 .footer {

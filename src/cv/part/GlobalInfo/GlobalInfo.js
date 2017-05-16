@@ -6,6 +6,7 @@ import Facebook from './logos/facebook.svg';
 import style from './style.css';
 import ShadowBox from '../ShadowBox/ShadowBox';
 import ColorBlock from '../ColorBlock/ColorBlock';
+import FontAwesome from 'react-fontawesome';
 
 
 class GlobalInfo extends ColorBlock {
@@ -14,6 +15,10 @@ class GlobalInfo extends ColorBlock {
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   };
+
+  formatAge(age){
+    return age + ' ans';
+  }
 
   obscurate(string){
     return string
@@ -25,12 +30,12 @@ class GlobalInfo extends ColorBlock {
   renderContent() {
     var globalInfo = this.props.globalInformations;
     var contentList=[
-      {type:'Age', cont:this.calculateAge(globalInfo.dateOfBirth)},
-      {type:'Mobile', cont:this.obscurate(globalInfo.mobile)},
-      {type:'Email', cont:this.obscurate(globalInfo.email)},
-      {type:'Adresse', cont:globalInfo.address},
-      {type:'Permis', cont:globalInfo.complementaryInformation},
-      {type:'Regions', cont:globalInfo.regions},
+      {type:'birthday-cake', cont:this.formatAge(this.calculateAge(globalInfo.dateOfBirth))},
+      {type:'mobile', cont:this.obscurate(globalInfo.mobile)},
+      {type:'envelope', cont:this.obscurate(globalInfo.email)},
+      {type:'map-marker', cont:globalInfo.address},
+      {type:'car', cont:globalInfo.complementaryInformation},
+      {type:'building-o', cont:globalInfo.regions},
     ];
 
     return (
@@ -63,7 +68,8 @@ class GlobalInfo extends ColorBlock {
                 <ul className={style.listInfo}>
                   {contentList.map((element, index) => 
                       <li key={index} className={style.listInfoItem}>
-                        <span className={style.contTypeStyle}>{element.type}</span>
+                        <FontAwesome className={style.contTypeStyle}
+                          name={element.type} size='1x' />
                         <span className={style.contStyle}>{element.cont}</span>
                       </li>
                     )}

@@ -74,7 +74,6 @@ class CV extends Component {
 
   handleFocusContent(contentId){
     this.setState({focusContentId: contentId});
-    console.log(contentId);
   }
 
   render() {

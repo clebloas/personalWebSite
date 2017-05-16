@@ -25,19 +25,22 @@
 }
 .listInfoItem{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-bottom:1em;
     font-size:0.9em;
 }
 
 .contTypeStyle {
-    composes: col2 from '../../gridview.css';
+    width: 2em;
     font-weight:bold;
     text-transform: uppercase;
+    color: #455A64;
+    text-align: center;
 }
 .contStyle {
     font-weight:bold;
-    color:#455A64;
+    padding-left: 1em;
+    /*color:#455A64;*/
 }
 
 /** Title */
