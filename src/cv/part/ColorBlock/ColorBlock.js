@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import style from './style.css';
+import ReactDOM from 'react-dom';
+
 class ColorBlock extends Component{ // Abstract class
 
     constructor(props) { 
@@ -14,7 +15,7 @@ class ColorBlock extends Component{ // Abstract class
 
     render(){
         return (
-            <div className={style.fade} >
+            <div>
                 {(this.renderBackground !== undefined)? this.renderBackground():""}
                 <div>
                     {this.renderContent()}
@@ -22,6 +23,10 @@ class ColorBlock extends Component{ // Abstract class
             </div>
         );
     }
-
+    componentDidUpdate(){
+        if(this.props.focusContentId===this.props.id){
+            ReactDOM.findDOMNode(this).scrollIntoViewIfNeeded({behavior:'smooth', block:'start'});
+        }
+    }
 }
 export default ColorBlock;
