@@ -8,10 +8,13 @@
 .menu{
     composes: col2 from './gridview.css';
     margin-top:3em;
+    position:fixed;
+    top:0px;
     float:left;
 }
 
 .main{
     composes: col10 from './gridview.css';
-    float:left;
+    float:right;
+    margin-top:10em;
 }

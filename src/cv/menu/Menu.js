@@ -8,24 +8,23 @@ class Menu extends Component{
         this.props.onChangeContentId(item.target.id);
     }
 
+    handleMouseOver(item){
+        this.props.onMouseOver(item.target.id);
+    }
+
     render(){
-        var self = this;
         return (
             <div className={gridview.row}>
                 <div className={style.menu}>
                     <ul>
-                        <li id='item_ProfessionalSkills' onClick={self.handleClick.bind(this)}>
-                            Compétences Professionelles
-                        </li>
-                        <li id='item_ProfessionalExperiences' onClick={self.handleClick.bind(this)}>
-                            Expériences Professionelles
-                        </li>
-                        <li id='item_Formations' onClick={self.handleClick.bind(this)}>
-                            Formations
-                        </li>
-                        <li id='default' onClick={self.handleClick.bind(this)}>
-                            Tout afficher
-                        </li>
+                        {this.props.list.map((content, index) => 
+                            <li id={content.props.id}
+                                key={index}
+                                onMouseOver={this.handleMouseOver.bind(this)}
+                                onClick={this.handleClick.bind(this)}>
+                                {content.props.menu_text}
+                            </li>)
+                        }
                     </ul>
                 </div>
             </div>
