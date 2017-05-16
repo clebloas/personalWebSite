@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 class List extends Component {
   render() {
-    this.items=this.props.children;
-    return <div>{this.items.map((item, index) => this.renderItem(item, index))}</div>;
+    var items=this.props.children;
+    return <div>{items.map((item, index) => this.renderItem(item, index))}</div>;
   }
 
   renderItem(item,index) {

@@ -16,29 +16,52 @@ import List from './list/List';
 class CV extends Component {
   constructor(props){
     super(props);
-    this.state={activeContentId:"default"};
+    this.state={activeContentId:"default", focusContentId:'default'};
     this.handleChangeContent=this.handleChangeContent.bind(this);
+    this.handleFocusContent=this.handleFocusContent.bind(this);
   }
-  renderContentList(){
+
+  createContentList(){
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
-    return(
-          <List activeContentId={this.state.activeContentId}>
+    return [
             <GlobalInfo 
+              id='item_GlobalInfo'
               key='item_GlobalInfo'
               globalInformations={cvDatas.globalInformations}
-              title={cvDatas.title}/>
+              menu_text='Général'
+              title={cvDatas.title}
+              focusContentId={this.state.focusContentId}/>,
             <Description 
+              id='item_Description'
               key='item_Description'
-              description={cvDatas.description}/>
+              menu_text='Description'
+              description={cvDatas.description}
+              focusContentId={this.state.focusContentId}/>,
             <ProfessionalSkills
-              key='item_ProfessionalSkills'/>
+              id='item_ProfessionalSkills'
+              key='item_ProfessionalSkills'
+              menu_text='Compétences'
+              focusContentId={this.state.focusContentId}/>,
             <ProfessionalExperiences
+              id='item_ProfessionalExperiences'
               expProfessionals={expProfessionals}
-              key='item_ProfessionalExperiences'/>
+              key='item_ProfessionalExperiences'
+              menu_text='Expériences'
+              focusContentId={this.state.focusContentId}/>,
             <Formations 
+              id='item_Formations'
               formations={formations}
-              key='item_Formations'/>
+              key='item_Formations'
+              menu_text='Formations'
+              focusContentId={this.state.focusContentId}/>
+    ];
+  }
+
+  renderContentList(contentList){
+    return(
+          <List activeContentId={this.state.activeContentId}>
+            {contentList}
           </List>
     );
   }
@@ -47,19 +70,27 @@ class CV extends Component {
     this.setState({activeContentId: contentId});
   }
 
+  handleFocusContent(contentId){
+    this.setState({focusContentId: contentId});
+    console.log(contentId);
+  }
+
   render() {
-    this.contentList=this.renderContentList();
+    var contentList=this.createContentList();
+    this.contentContainer=this.renderContentList(contentList);
     return (
     <div>
       <div className={style.menu}>
         <div className={style.menuContent}>
-          <Menu onChangeContentId={this.handleChangeContent} />
+          <Menu onChangeContentId={this.handleChangeContent} 
+            onMouseOver={this.handleFocusContent} 
+            list={contentList.concat([{props:{id:'default', menu_text:'Tout montrer'}}])}/>
         </div>
       </div>
      
       <div className={style.main} >
         <div className={style.content}>
-          {this.contentList}
+          {this.contentContainer}
         </div>
       </div>
     </div>
