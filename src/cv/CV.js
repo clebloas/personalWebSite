@@ -27,13 +27,6 @@ class CV extends Component {
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
     return [
-            <GlobalInfo 
-              id='item_GlobalInfo'
-              key='item_GlobalInfo'
-              globalInformations={cvDatas.globalInformations}
-              menu_text='Général'
-              title={cvDatas.title}
-              focusContentId={this.state.focusContentId}/>,
             <Description 
               id='item_Description'
               key='item_Description'
@@ -81,6 +74,12 @@ class CV extends Component {
     this.contentContainer=this.renderContentList(contentList);
     return (
     <div>
+     <div className={style.globalInfo}>
+      <GlobalInfo 
+        globalInformations={cvDatas.globalInformations}
+        menu_text='Général'
+        title={cvDatas.title}/>
+      </div>  
       <div className={style.menu}>
         <div className={style.menuContent}>
           <Menu onChangeContentId={this.handleChangeContent} 

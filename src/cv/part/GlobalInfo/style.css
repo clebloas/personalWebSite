@@ -1,19 +1,14 @@
 
-.leftPart{
-    composes: col4 from '../../gridview.css';
-    float:left; 
+.infos{
+    padding-top: 2em;
 }
-.rightPart{
-    composes: col8 from '../../gridview.css';
-    float:left;
-    padding-left:2em;
-    flex:auto;
+.infos>*{
+    padding-left:1em;
 }
 
 .imgCss{
-    max-width: 100%;
+    width:100%;
     height:auto;
-    margin:auto;
 }
 
 .listInfo {
@@ -40,20 +35,22 @@
 .contStyle {
     font-weight:bold;
     padding-left: 1em;
-    /*color:#455A64;*/
+    color:#455A64;
 }
 
 /** Title */
 .descriptionBloc {
-    border-bottom: 1px solid #dedede;
+    /*border-bottom: 1px solid #dedede;*/
     padding-bottom:1em;
 }
 .names{
     font-size:1.8em;
     font-weight:bolder;
+    color:#314047;
 }
 .jobTitle{
     font-size:1.4em;
+    color:#314047;
 }
 
 
@@ -83,6 +80,6 @@
         padding-top:2em;
     }
     .descriptionBloc{
-    padding-bottom:2em;
+        padding-bottom:2em;
     }
 }

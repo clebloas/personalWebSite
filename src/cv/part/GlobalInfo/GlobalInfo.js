@@ -39,25 +39,12 @@ class GlobalInfo extends ColorBlock {
     ];
 
     return (
-      <div>
-        
-        <ShadowBox showFooter='true' footer={(
-            <div className={style.icones}>
-              <a className={style.iconeLink} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
-                <Linkedin height='2em' width='2em' />
-              </a>
-              <a className={style.iconeLink} href="https://github.com/clebloas">
-                <Github height='2em' width='2em'/>
-              </a>
-              <a className={style.iconeLink} href="https://www.facebook.com/clebloas">
-                <Facebook height='2em' width='2em'/>
-              </a>
-            </div>
-          )}>
-            <div className={style.leftPart}>
+      <ShadowBox>
+        <div className={style.global}>
+            <div>
               <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
             </div>
-            <div className={style.rightPart}>
+            <div className={style.infos}>
               <div className={style.descriptionBloc}>
                 <span className={style.names}>
                   {globalInfo.firstname + " " + globalInfo.lastname}
@@ -76,8 +63,20 @@ class GlobalInfo extends ColorBlock {
                 </ul>
               </div>
             </div>
-        </ShadowBox>
-      </div>
+            <div className={style.icones}>
+              <a className={style.iconeLink} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
+                <Linkedin height='2em' width='2em' />
+              </a>
+              <a className={style.iconeLink} href="https://github.com/clebloas">
+                <Github height='2em' width='2em'/>
+              </a>
+              <a className={style.iconeLink} href="https://www.facebook.com/clebloas">
+                <Facebook height='2em' width='2em'/>
+              </a>
+            </div>
+          </div>
+           
+      </ShadowBox>
     );
   }
 };

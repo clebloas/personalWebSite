@@ -11,10 +11,19 @@
     position:fixed;
     top:0px;
     float:left;
+    max-width: inherit;
 }
 
 .main{
-    composes: col10 from './gridview.css';
+    composes: col9 from './gridview.css';
     float:right;
     margin-top:10em;
+}
+
+.globalInfo{
+    composes: col3 from './gridview.css'; 
+    position:fixed;
+    top:0px;
+    float:left;
+    max-width: fit-content;
 }
