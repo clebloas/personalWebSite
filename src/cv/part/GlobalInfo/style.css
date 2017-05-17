@@ -13,7 +13,6 @@
 
 .listInfo {
     list-style:none;
-    padding-left:0;
     padding-top:1em;
     margin: 0;
 
@@ -25,13 +24,6 @@
     font-size:0.9em;
 }
 
-.contTypeStyle {
-    width: 2em;
-    font-weight:bold;
-    text-transform: uppercase;
-    color: #455A64;
-    text-align: center;
-}
 .contStyle {
     font-weight:bold;
     padding-left: 1em;
@@ -60,14 +52,15 @@
 }
 
 .icones{
-    display: flex;
-    flex-direction: row;
+    margin-bottom: 0.5em;
+    margin-top: 2em;
+    text-align: center;
 }
 
-.iconeLink>svg {
-    vertical-align:middle;
-    margin: 0em 1em;
-    height: 2.8em;
+.icone{
+    color: #455A64;
+    text-align: center;
+    width: 2em;
 }
 
 

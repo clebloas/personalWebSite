@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Linkedin from './logos/linkedin.svg';
-import Github from './logos/github.svg';
-import Facebook from './logos/facebook.svg';
 import style from './style.css';
 import ShadowBox from '../ShadowBox/ShadowBox';
 import ColorBlock from '../ColorBlock/ColorBlock';
@@ -41,9 +38,7 @@ class GlobalInfo extends ColorBlock {
     return (
       <ShadowBox>
         <div className={style.global}>
-            <div>
-              <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
-            </div>
+            <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
             <div className={style.infos}>
               <div className={style.descriptionBloc}>
                 <span className={style.names}>
@@ -51,27 +46,25 @@ class GlobalInfo extends ColorBlock {
                 </span>
                 <div className={style.jobTitle}>{this.props.title}</div>
               </div>
-              <div>
-                <ul className={style.listInfo}>
-                  {contentList.map((element, index) => 
-                      <li key={index} className={style.listInfoItem}>
-                        <FontAwesome className={style.contTypeStyle}
-                          name={element.type} size='1x' />
-                        <span className={style.contStyle}>{element.cont}</span>
-                      </li>
-                    )}
-                </ul>
-              </div>
+              <ul className={style.listInfo}>
+                {contentList.map((element, index) => 
+                    <li key={index} className={style.listInfoItem}>
+                      <FontAwesome className={style.icone}
+                        name={element.type} size='1x' />
+                      <span className={style.contStyle}>{element.cont}</span>
+                    </li>
+                  )}
+              </ul>
             </div>
             <div className={style.icones}>
-              <a className={style.iconeLink} href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
-                <Linkedin height='2em' width='2em' />
+              <a href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
+                <FontAwesome className={style.icone} name='linkedin' size='2x' />
               </a>
-              <a className={style.iconeLink} href="https://github.com/clebloas">
-                <Github height='2em' width='2em'/>
+              <a  href="https://github.com/clebloas">
+                <FontAwesome className={style.icone} name='github' size='2x' />
               </a>
-              <a className={style.iconeLink} href="https://www.facebook.com/clebloas">
-                <Facebook height='2em' width='2em'/>
+              <a href="https://www.facebook.com/clebloas">
+                <FontAwesome className={style.icone} name='facebook'size='2x' />
               </a>
             </div>
           </div>
