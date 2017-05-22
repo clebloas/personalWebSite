@@ -18,7 +18,7 @@
             "logo" : "http://static.booking.weekendesk.fr/image_cache/A276000/276320/276320_1920_595_FSImage_1_Fuveau_interieur_accueil_o417.jpg",
             "role" : "Développeur Java",
             "startDate":"2015-07",
-            "endDate":"current",
+            "endDate":"Actuel",
             "mission":["Réaliser la communication via API avec des partenaires externes", "Maintenir et faire évoluer un monolithe vers une architecture en microservice "],
             "environnementTechnique":["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java"]
         },

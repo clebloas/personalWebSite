@@ -1,9 +1,14 @@
-
-.infos{
-    padding-top: 2em;
+.global{
+    padding: 2em;
+    padding-bottom: 1em;
 }
+.infos{
+    border-bottom: 1px solid #ced7db;
+    padding-bottom: 1em;
+}
+
 .infos>*{
-    padding-left:1em;
+    padding-left:0em;
 }
 
 .imgCss{
@@ -24,7 +29,6 @@
 }
 
 .contStyle {
-    font-weight:bold;
     padding-left: 1em;
     color:#455A64;
 }
@@ -58,10 +62,14 @@
 
 .icone{
     color: #455A64;
+    text-align: left;
+    width: 1em;
+}
+.externalLink{
+    color: #455A64;
     text-align: center;
     width: 2em;
 }
-
 
 /* desktop */
 @media only screen and (min-width: 60em) {

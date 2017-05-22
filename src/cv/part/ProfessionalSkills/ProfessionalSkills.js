@@ -1,8 +1,7 @@
 import React from 'react';
-import ShadowBox from '../ShadowBox/ShadowBox';
 import ColorBlock from '../ColorBlock/ColorBlock';
-import Title from '../Title/Title';
 import style from './style.css';
+import FontAwesome from 'react-fontawesome';
 
 class ProfessionnalSkills extends ColorBlock {
     renderContent() {
@@ -13,9 +12,12 @@ class ProfessionnalSkills extends ColorBlock {
             {type:'Intégration continue', eval:'80%'}
         ];
         return (
-            <ShadowBox>
-                <Title iconeName='cogs' value='Compétences'/>
+            <div>
                 <div className={style.content}>
+                    <div className={style.title}>
+                        <FontAwesome className={style.icone} name='cogs' size='lg' />
+                        <span className={style.titleName}>Compétences</span>
+                    </div>
                 {comps.map((comp, index) => 
                     <div key={index} className={style.skill}>
                         <div className={style.skillName}>{comp.type}</div>
@@ -25,7 +27,7 @@ class ProfessionnalSkills extends ColorBlock {
                     </div>
                 )}
                 </div>
-            </ShadowBox>);
+            </div>);
     }
 }
 

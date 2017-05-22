@@ -5,6 +5,8 @@ import FontAwesome from 'react-fontawesome';
 
 class ProfessionalExperience extends Component {
     getHeader(){
+        var isActual=this.props.endDate==="Actuel";
+        
         return (
             <div className={style.header}>
                 <div className={style.rolecompany}>
@@ -17,7 +19,7 @@ class ProfessionalExperience extends Component {
                     <span >
                         <span>{this.props.startDate}</span>
                         <span className={style.dateDelimitor}>-</span> 
-                        <span> {this.props.endDate}</span>
+                        <span className={isActual?style.actual:''}>{this.props.endDate}</span>
                     </span>
                 </div>
             </div>

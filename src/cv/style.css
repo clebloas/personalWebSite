@@ -1,29 +1,26 @@
 .content{
-    composes: col10 from './gridview.css';
     display:'flex';
     flex-direction:'column';
     margin: auto;
 }
 
-.menu{
+/*.menu{
     composes: col2 from './gridview.css';
     margin-top:3em;
     position:fixed;
     top:0px;
     float:left;
     max-width: inherit;
+}*/
+
+.body{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: fit-content;
 }
 
-.main{
-    composes: col9 from './gridview.css';
-    float:right;
-    /*margin-top:10em;*/
-}
-
-.globalInfo{
-    composes: col3 from './gridview.css'; 
-    position:fixed;
-    top:0px;
-    float:left;
-    max-width: fit-content;
+.body>div{
+    margin:0.5em;
 }

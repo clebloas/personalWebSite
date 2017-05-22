@@ -2,16 +2,17 @@ import React, {Component} from 'react';
 import GlobalInfo from './part/GlobalInfo/GlobalInfo';
 //import Title from './part/Title';
 import ProfessionalExperiences from './part/ProfessionalExperiences/ProfessionalExperiences';
-import ProfessionalSkills from './part/ProfessionalSkills/ProfessionalSkills';
 import Formations from './part/Formations/Formations';
 //import Skills from './part/Skills';
 //import PersonalActivities from './part/PersonalActivities'
 import Description from './part/Description/Description';
 import cvDatas from '../mycv.json';
 import './fonts.css';
-import Menu from './menu/Menu';
+// import Menu from './menu/Menu';
 import style from './style.css';
 import List from './list/List';
+
+import gridview from './gridview.css';
 
 class CV extends Component {
 
@@ -32,11 +33,6 @@ class CV extends Component {
               key='item_Description'
               menu_text='Description'
               description={cvDatas.description}
-              focusContentId={this.state.focusContentId}/>,
-            <ProfessionalSkills
-              id='item_ProfessionalSkills'
-              key='item_ProfessionalSkills'
-              menu_text='Compétences'
               focusContentId={this.state.focusContentId}/>,
             <ProfessionalExperiences
               id='item_ProfessionalExperiences'
@@ -73,8 +69,8 @@ class CV extends Component {
     var contentList=this.createContentList();
     this.contentContainer=this.renderContentList(contentList);
     return (
-    <div>
-     <div className={style.globalInfo}>
+    <div className={style.body}>
+     <div className={gridview.colM4+ " "+ gridview.col3}>
       <GlobalInfo 
         globalInformations={cvDatas.globalInformations}
         menu_text='Général'
@@ -88,7 +84,7 @@ class CV extends Component {
         </div>
       </div>*/}
      
-      <div className={style.main} >
+      <div className={gridview.colM7+ " "+ gridview.col7} >
         <div className={style.content}>
           {this.contentContainer}
         </div>

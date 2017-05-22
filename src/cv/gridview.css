@@ -4,8 +4,25 @@
     width: 100%;
 }
 
-/* for desktop */
-@media only screen and (min-width: 60em) {
+
+/* For tablets: */
+@media only screen and (min-width: 50em) {
+    .colM1 {width: 8.33%;}
+    .colM2 {width: 16.66%;}
+    .colM3 {width: 25%;}
+    .colM4 {width: 33.33%;}
+    .colM5 {width: 41.66%;}
+    .colM6 {width: 50%;}
+    .colM7 {width: 58.33%;}
+    .colM8 {width: 66.66%;}
+    .colM9 {width: 75%;}
+    .colM10 {width: 83.33%;}
+    .colM11 {width: 91.66%;}
+    .colM12 {width: 100%;}
+}
+
+/* For desktop */
+@media only screen and (min-width: 70em) {
     .col1 {width: 8.33%;}
     .col2 {width: 16.66%;}
     .col3 {width: 25%;}
@@ -18,10 +35,4 @@
     .col10 {width: 83.33%;}
     .col11 {width: 91.66%;}
     .col12 {width: 100%;}
-
-    /*.row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }*/
 }

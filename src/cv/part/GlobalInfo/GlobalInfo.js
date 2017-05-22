@@ -4,6 +4,7 @@ import style from './style.css';
 import ShadowBox from '../ShadowBox/ShadowBox';
 import ColorBlock from '../ColorBlock/ColorBlock';
 import FontAwesome from 'react-fontawesome';
+import ProfessionalSkills from '../ProfessionalSkills/ProfessionalSkills'
 
 
 class GlobalInfo extends ColorBlock {
@@ -37,8 +38,8 @@ class GlobalInfo extends ColorBlock {
 
     return (
       <ShadowBox>
+        <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
         <div className={style.global}>
-            <img alt="My self" src="./moiLowResolution.jpg" className={style.imgCss}/>
             <div className={style.infos}>
               <div className={style.descriptionBloc}>
                 <span className={style.names}>
@@ -56,19 +57,21 @@ class GlobalInfo extends ColorBlock {
                   )}
               </ul>
             </div>
+            <ProfessionalSkills />
+
             <div className={style.icones}>
               <a href="https://www.linkedin.com/in/christopher-le-bloas-b3b49465/">
-                <FontAwesome className={style.icone} name='linkedin' size='2x' />
+                <FontAwesome className={style.externalLink} name='linkedin' size='2x' />
               </a>
               <a  href="https://github.com/clebloas">
-                <FontAwesome className={style.icone} name='github' size='2x' />
+                <FontAwesome className={style.externalLink} name='github' size='2x' />
               </a>
               <a href="https://www.facebook.com/clebloas">
-                <FontAwesome className={style.icone} name='facebook' size='2x' />
+                <FontAwesome className={style.externalLink} name='facebook' size='2x' />
               </a>
             </div>
           </div>
-           
+          
       </ShadowBox>
     );
   }

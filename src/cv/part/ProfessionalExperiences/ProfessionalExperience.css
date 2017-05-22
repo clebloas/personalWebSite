@@ -85,3 +85,13 @@
 .dateDelimitor{
     padding:0em 0.5em;
 }
+
+.actual{
+    color:white;
+    background-color: #455A64;
+    border-radius: 0.2em;
+    border-color: #455A64;
+    text-align: left;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
