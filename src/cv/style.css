@@ -17,7 +17,7 @@
 .main{
     composes: col9 from './gridview.css';
     float:right;
-    margin-top:10em;
+    /*margin-top:10em;*/
 }
 
 .globalInfo{

@@ -1,0 +1,15 @@
+.title{
+    padding-top: 1em;
+    font-size:2em;
+    color:#657A84;
+}
+
+.title > span{
+    vertical-align: middle;
+}
+
+.icone{
+    color: #455A64;
+    text-align: center;
+    width: 2em;
+}

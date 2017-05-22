@@ -80,13 +80,13 @@ class CV extends Component {
         menu_text='Général'
         title={cvDatas.title}/>
       </div>  
-      <div className={style.menu}>
+      {/*<div className={style.menu}>
         <div className={style.menuContent}>
           <Menu onChangeContentId={this.handleChangeContent} 
             onMouseOver={this.handleFocusContent} 
             list={contentList.concat([{props:{id:'default', menu_text:'Tout montrer'}}])}/>
         </div>
-      </div>
+      </div>*/}
      
       <div className={style.main} >
         <div className={style.content}>

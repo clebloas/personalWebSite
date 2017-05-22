@@ -1,0 +1,39 @@
+.skill{
+    width:40%;
+    margin:1em 2em 1em 1em;
+}
+
+.skillName{
+    margin-bottom:0.3em;
+    font-weight: bold;
+    color: #455A64;
+}
+
+.barBox{
+    background-color:#ffcdd2;
+    margin:auto;
+    height:1em;
+    width:100%;
+    border-radius: 0.5em;
+}
+
+
+.barBox>div{
+    background-color:#bf2b38;
+    min-height:1em;
+    color:white;
+    border-radius: 0.5em;
+    transition: width 2s;
+    transition-delay:1s;
+    vertical-align: middle;
+    text-align: center;
+    font-size: smaller;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2em;
+}

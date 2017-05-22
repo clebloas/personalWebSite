@@ -28,9 +28,9 @@ class GlobalInfo extends ColorBlock {
     var globalInfo = this.props.globalInformations;
     var contentList=[
       {type:'birthday-cake', cont:this.formatAge(this.calculateAge(globalInfo.dateOfBirth))},
-      {type:'mobile', cont:this.obscurate(globalInfo.mobile)},
+      {type:'phone', cont:this.obscurate(globalInfo.mobile)},
       {type:'envelope', cont:this.obscurate(globalInfo.email)},
-      {type:'map-marker', cont:globalInfo.address},
+      {type:'home', cont:globalInfo.address},
       {type:'car', cont:globalInfo.complementaryInformation},
       {type:'building-o', cont:globalInfo.regions},
     ];
@@ -50,7 +50,7 @@ class GlobalInfo extends ColorBlock {
                 {contentList.map((element, index) => 
                     <li key={index} className={style.listInfoItem}>
                       <FontAwesome className={style.icone}
-                        name={element.type} size='1x' />
+                        name={element.type} size='lg' />
                       <span className={style.contStyle}>{element.cont}</span>
                     </li>
                   )}
@@ -64,7 +64,7 @@ class GlobalInfo extends ColorBlock {
                 <FontAwesome className={style.icone} name='github' size='2x' />
               </a>
               <a href="https://www.facebook.com/clebloas">
-                <FontAwesome className={style.icone} name='facebook'size='2x' />
+                <FontAwesome className={style.icone} name='facebook' size='2x' />
               </a>
             </div>
           </div>

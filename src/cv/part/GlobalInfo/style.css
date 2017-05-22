@@ -13,7 +13,6 @@
 
 .listInfo {
     list-style:none;
-    padding-top:1em;
     margin: 0;
 
 }
@@ -68,9 +67,6 @@
 @media only screen and (min-width: 60em) {
     .listInfoItem{
         flex-direction: row;
-    }
-    .listInfo{
-        padding-top:2em;
     }
     .descriptionBloc{
         padding-bottom:2em;

@@ -1,42 +1,60 @@
 import React, {Component} from 'react';
 import style from './ProfessionalExperience.css';
+import FontAwesome from 'react-fontawesome';
+// import FormattedDate from 'react-intl';  
 
 class ProfessionalExperience extends Component {
     getHeader(){
         return (
             <div className={style.header}>
-                <div>
-                    <div className={style.datecompany}>
-                        <div className={style.date}>{this.props.startDate}/{this.props.endDate}</div>
-                        <div className={style.companyName}>{this.props.companyName}</div>
-                    </div>
-                    <div className={style.role}>{this.props.role}</div>
+                <div className={style.rolecompany}>
+                    <span className={style.role}>{this.props.role}</span>
+                    <FontAwesome className={style.atIcon} name='at' size='lg' />
+                    <span className={style.companyName}>{this.props.companyName}</span>
                 </div>
-                <img alt={this.props.school} src={this.props.logo} className={style.logo}/>
+                <div className={style.date}>
+                    <FontAwesome className={style.calendarIcon} name='calendar' size='lg' />
+                    <span >
+                        <span>{this.props.startDate}</span>
+                        <span className={style.dateDelimitor}>-</span> 
+                        <span> {this.props.endDate}</span>
+                    </span>
+                </div>
             </div>
         );
     }
     getEnvironment(){
+        if(this.props.environnementTechnique === undefined){
+            return ;
+        }
         return (
-            <div className={style.environment}><div>{this.props.environnementTechnique}</div></div>
+            <div className={style.environment}>
+                {this.props.environnementTechnique
+                    .map( (techno, index) => <span key={index}>{techno}</span>)}
+            </div>
         );
     }
 
     getContent(){
         return (
             <ul className={style.liste}>
-                    {this.props.mission.split('|').map((task,index) => {
-                        return (<li key={index}>{task}</li>);
+                    {this.props.mission.map((task,index) => {
+                        return (<li key={index}>{task.trim()}</li>);
                     })}
             </ul>)
     }
 
     render(){
         return (
-            <div className={style.shadowBlock}>
-                {this.getHeader()}
-                {this.getContent()}
-                {this.getEnvironment()}
+            <div className={style.block}>
+                <div>
+                    {this.getHeader()}
+                    {this.getContent()}
+                    {this.getEnvironment()}
+                </div>
+                <div className={style.logo}>
+                    {/*<img alt={this.props.school} src={this.props.logo}/>*/}
+                </div>
             </div>
         );
     }

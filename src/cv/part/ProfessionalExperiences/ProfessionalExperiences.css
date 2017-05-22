@@ -1,5 +1,5 @@
 .organizer{
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-around;
+    flex-flow: column;
+    padding:2em;
 }

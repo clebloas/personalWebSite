@@ -2,13 +2,15 @@ import React         from 'react';
 import Formation from './Formation';
 import ColorBlock from '../ColorBlock/ColorBlock';
 import Title from '../Title/Title';
+import ShadowBox from '../ShadowBox/ShadowBox.js';
+import style from './style.css';
 
 class Formations extends ColorBlock {
     renderContent() {
         return (
-            <div style={{marginTop: '4em'}}>
-                <Title value="Formations"/>
-                <div id="formations">
+            <ShadowBox>
+                <Title iconeName="graduation-cap" value="Formations"/>
+                <div className={style.content}>
                     {this
                         .props
                         .formations
@@ -23,7 +25,7 @@ class Formations extends ColorBlock {
                                 link={formation.link}
                                 />)}
                 </div>
-            </div>
+            </ShadowBox>
         );
     }
 }

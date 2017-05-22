@@ -18,9 +18,9 @@
             "logo" : "http://static.booking.weekendesk.fr/image_cache/A276000/276320/276320_1920_595_FSImage_1_Fuveau_interieur_accueil_o417.jpg",
             "role" : "Développeur Java",
             "startDate":"2015-07",
-            "endDate":"2017",
-            "mission":"Réaliser la communication via API avec des partenaires externes | Maintenir et faire évoluer un monolithe vers une architecture en microservice ",
-            "environnementTechnique":"Docker, Kubernetes, Jira, Spring, Spinnaker, Assertj, Cucumber, Maven, Java"
+            "endDate":"current",
+            "mission":["Réaliser la communication via API avec des partenaires externes", "Maintenir et faire évoluer un monolithe vers une architecture en microservice "],
+            "environnementTechnique":["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java"]
         },
         {
             "companyName":"Thales services (Client: Thales Communication)",
@@ -28,8 +28,8 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2014-07",
             "endDate":"2015-03",
-            "mission":"Porter une architecture \"big endian\" vers une architecture \"little endian\" d'un système de radio en binôme | Changement de l'environnement de compilation | Préparation de l'environnement de test afin de s'assurer de la non-régression de l'application| Réalisation d'un framework de test",
-            "environnementTechnique":"C++, QMake, CMake, Java, JUnit, Ant, Bash, Clearcase, Klockwork, Jira, Jenkins"
+            "mission":["Porter une architecture \"big endian\" vers une architecture \"little endian\" d'un système de radio en binôme", "Changement de l'environnement de compilation", "Préparation de l'environnement de test afin de s'assurer de la non-régression de l'application", "Réalisation d'un framework de test"],
+            "environnementTechnique":["C++", "QMake", "CMake", "Java", "JUnit", "Ant", "Bash", "Clearcase", "Klockwork", "Jira", "Jenkins"]
         },
         {
             "companyName":"Thales services (Client: Thales Communication)",
@@ -37,8 +37,8 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2013-11",
             "endDate":"2014-04",
-            "mission":"Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes| Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)",
-            "environnementTechnique":"Java, GWT, OSGi, Karaf(interne), Spring, Scrum, Selenium, Junit, Clearcase, Sonar, Maven, Jira, Jenkins"
+            "mission":["Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes", " Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)"],
+            "environnementTechnique":["Java", "GWT", "OSGi", "Karaf(interne)", "Spring", "Scrum", "Selenium", "Junit", "Clearcase", "Sonar", "Maven", "Jira", "Jenkins"]
         },
         {
             "companyName":"Thales services (Client: DCNS)",
@@ -46,8 +46,8 @@
             "role" : "MCO",
             "startDate":"2012-12",
             "endDate":"2013-10",
-            "mission":"Automatisation de tests d'intégration (5mois) | Participation au chiffrage d'un autre périmètre de tests| Traitement et correction de fait techniques |Mise en place de l'environnement d'intégration continu avec pour objectif de le généraliser sur d'autres projets",
-            "environnementTechnique":"Java, Swing, SVN, Maven, XVFB, Sonar, Nexus, Jenkins"
+            "mission":["Automatisation de tests d'intégration (5mois)", "Participation au chiffrage d'un autre périmètre de tests", " Traitement et correction de fait techniques", " Mise en place de l'environnement d'intégration continu avec pour objectif de le généraliser sur d'autres projets"],
+            "environnementTechnique":["Java", "Swing", "SVN", "Maven", "XVFB", "Sonar", "Nexus", "Jenkins"]
         },
         {
             "companyName":"Thales services (Client: CEA)",
@@ -55,8 +55,8 @@
             "role" : "Réponse à appel d'offre",
             "startDate":"2012-11",
             "endDate":"2012-12",
-            "mission":"Refonte d'une application réalisée en Matlab | Recherche, proposition de solutions techniques|Réalisation d'un prototype|Réalisation de compartifs technologiques",
-            "environnementTechnique":"UML, design pattern, JavaFx, Swing, GWT, JQuery"
+            "mission":["Refonte d'une application réalisée en Matlab", "Recherche, Proposition de solutions techniques", " Réalisation d'un prototype", " Réalisation de compartifs technologiques"],
+            "environnementTechnique":["UML", "design pattern", "JavaFx", "Swing", "GWT", "JQuery"]
         },
         {
             "companyName":"Infotel Conseil",
@@ -64,8 +64,8 @@
             "role" : "Stagiaire",
             "startDate":"2012-02",
             "endDate":"2012-07",
-            "mission":"Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type|Réalisation du projet de la veille technique à sa démonstration | Développement d'un plugin Firefox",
-            "environnementTechnique":"Spring, Hibernate, Selenium, RabbitMQ, MySQL, Maven, Git"
+            "mission":["Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type", " Réalisation du projet de la veille technique à sa démonstration", "Développement d'un plugin Firefox"],
+            "environnementTechnique":["Spring", "Hibernate", "Selenium", "RabbitMQ", "MySQL", "Maven", "Git"]
         },
         {
             "companyName":"INSA Rouen (Client: Bibliothèque Publique d'Informations)",
@@ -73,15 +73,15 @@
             "role" : "Etudiant", 
             "startDate":"2011-01",
             "endDate":"2011-12",
-            "mission":"Réalisation d'une application certifié ISO9001:2008 pour la bibliothèque nationale George Pompidou| Responsable qualité (Mises en place des exigeances qualités nécessaire)|Réalisation d'uneapplication web permettant la localisation de média|Définition et mise en place de la gestion des configurations| Rédaction des spécifications, de la conception, DTD...",
-            "environnementTechnique":"JavaJEE, Jetty,SVN, JQuery, Cycle en V"
+            "mission":["Réalisation d'une application certifié ISO9001:2008 pour la bibliothèque nationale George Pompidou", " Responsable qualité (Mises en place des exigeances qualités nécessaire)", " Réalisation d'uneapplication web permettant la localisation de média", " Définition et mise en place de la gestion des configurations", "Rédaction des spécifications, de la conception, DTD..."],
+            "environnementTechnique":["JavaJEE", "Jetty", "SVN", "JQuery", "Cycle en V"]
         },
         {
             "companyName":"M.A. Système",
             "role" : "Stagiaire", 
             "startDate":"2011-07",
             "endDate":"2011-08",
-            "mission":"Création d'interfaces utilisateurs permettant la communication avec des robots industriels"
+            "mission":["Création d'interfaces utilisateurs permettant la communication avec des robots industriels"]
         },
         {
             "companyName":"Darty(intérim)",
@@ -89,7 +89,7 @@
             "role" : "Technicien", 
             "startDate":"2010-07",
             "endDate":"2010-09",
-            "mission":"Installation informatique chez les particuliers (relations clients, contraintes temporelles)"
+            "mission":["Installation informatique chez les particuliers (relations clients, contraintes temporelles)"]
         },
         {
             "companyName":"Sealynx",
@@ -97,7 +97,7 @@
             "role" : "Stagiaire", 
             "startDate":"2009-07",
             "endDate":"2009-07",
-            "mission":"Mis en place d'un outil Excel permettant l'autotisation de tâches quotidiennes (macro)"
+            "mission":["Mis en place d'un outil Excel permettant l'autotisation de tâches quotidiennes (macro)"]
         },
         {
             "companyName":"Mairie de Rouen",
@@ -105,7 +105,7 @@
             "role" : "Stagiaire", 
             "startDate":"2008-04",
             "endDate":"2008-06",
-            "mission":"Mis en place d'un réseau Wi-Fi sécurisé|Identification des besoins|proposition de solutions|Tests et mise en production|rédaction de documentation"
+            "mission":["Mis en place d'un réseau Wi-Fi sécurisé", "Identification des besoins", "Proposition de solutions", "Tests et mise en production", "Rédaction de documentation"]
         },
         {
             "companyName":"Technocom (Thuit Signol)",
@@ -113,7 +113,7 @@
             "role" : "Animateur Vacataire", 
             "startDate":"2007-02",
             "endDate":"2010-02",
-            "mission":"Décourverte des jeux en réseau, vidéo, sensibilisation à science et aux dangers de l'Internet"
+            "mission":["Décourverte des jeux en réseau, vidéo, sensibilisation à science et aux dangers de l'Internet"]
         }
     ],
     "formations":[

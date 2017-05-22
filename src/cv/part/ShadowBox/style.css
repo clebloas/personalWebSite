@@ -1,12 +1,13 @@
 .shadowBox {
     box-shadow: 0em 0em 0.5em #000000;
     background-color: white;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .marginBlock {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .footer {

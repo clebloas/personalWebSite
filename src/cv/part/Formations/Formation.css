@@ -1,28 +1,17 @@
-.shadowBlock {
-    box-shadow: 0em 0em 0.5em #000000;
-    background-color: white;
-    margin-top: 1em;
-    display:flex;
-    flex-direction: row; 
-    align-content: space-around;
-    padding: 0.5em;
-}
-
 .logo {
     height: 55px;
-    margin: 0 0.5em;
 }
 
 .content {
     align-self: flex-start;
     flex-grow: 1;
-    margin: 0.5em 0.5em;
+    padding-top:0.5em;
+    background-color: unset;
 }
 
 .date {
     color: #455A64;
     font-weight: bold;
-    /*font-weight: ;*/  
     margin: 0 0.5em;
     font-size: larger;
 }
@@ -36,4 +25,22 @@
 
 .title{
     margin: 0.5em 0.5em;
+}
+
+.block{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-bottom: 1px #ced7db   solid;
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+}
+
+.block:last-child{
+    border: unset;
+    padding-bottom: 0;
+}
+
+.iconeBox{
+    margin:auto;    
 }
