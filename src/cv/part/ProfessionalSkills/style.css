@@ -53,6 +53,7 @@
 
 .titleName{
     padding-left: 1em;
+    font-size: 1.2em;
 }
 
 .title > span{
@@ -63,6 +64,8 @@
     color: #455A64;
     text-align: left;
     width: 1em;
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 
 @keyframes growAnimation {

@@ -63,18 +63,11 @@
     color:#90A4AE;
 }
 
-.logo{
-    margin: auto;
-}
-
-.logo>img {
-    max-height: 55px;
-}
-
 .calendarIcon{
     color: #455A64;
     text-align: left;
     width: 1.5em;
+    font-size:1em;
 }
 .atIcon{
     color: #455A64;
@@ -82,7 +75,7 @@
     padding:0em 0.5em;
 }
 
-.dateBloc{
+.dateBloc>*{
     vertical-align: middle;
 }
 .date {

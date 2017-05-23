@@ -57,9 +57,6 @@ class ProfessionalExperience extends Component {
                     {this.getContent()}
                     {this.getEnvironment()}
                 </div>
-                <div className={style.logo}>
-                    {/*<img alt={this.props.school} src={this.props.logo}/>*/}
-                </div>
             </div>
         );
     }
