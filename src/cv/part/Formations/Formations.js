@@ -1,12 +1,11 @@
 import React         from 'react';
 import Formation from './Formation';
-import ColorBlock from '../ColorBlock/ColorBlock';
 import Title from '../Title/Title';
 import ShadowBox from '../ShadowBox/ShadowBox.js';
 import style from './style.css';
 
-class Formations extends ColorBlock {
-    renderContent() {
+class Formations extends React.Component {
+    render() {
         return (
             <ShadowBox>
                 <Title iconeName="graduation-cap" value="Formations"/>

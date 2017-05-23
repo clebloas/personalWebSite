@@ -2,12 +2,11 @@ import React from 'react';
 
 import style from './style.css';
 import ShadowBox from '../ShadowBox/ShadowBox';
-import ColorBlock from '../ColorBlock/ColorBlock';
 import FontAwesome from 'react-fontawesome';
 import ProfessionalSkills from '../ProfessionalSkills/ProfessionalSkills'
 
 
-class GlobalInfo extends ColorBlock {
+class GlobalInfo extends React.Component {
   calculateAge(birthday) { // birthday is a date
     var ageDifMs = Date.now() - new Date(birthday).getTime();
     var ageDate = new Date(ageDifMs); // miliseconds from epoch
@@ -25,7 +24,7 @@ class GlobalInfo extends ColorBlock {
       .replace(/0/g,'[O]');
   }
   
-  renderContent() {
+  render() {
     var globalInfo = this.props.globalInformations;
     var contentList=[
       {type:'birthday-cake', cont:this.formatAge(this.calculateAge(globalInfo.dateOfBirth))},

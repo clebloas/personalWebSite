@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import style from './ProfessionalExperience.css';
 import FontAwesome from 'react-fontawesome';
-// import FormattedDate from 'react-intl';  
 
 class ProfessionalExperience extends Component {
+    formatDate(mmyyyy){
+        return new Date(mmyyyy).toLocaleDateString("fr-FR", {month:'long', year:'numeric'});
+    }
+
     getHeader(){
         var isActual=this.props.endDate==="Actuel";
         
@@ -14,12 +17,12 @@ class ProfessionalExperience extends Component {
                     <FontAwesome className={style.atIcon} name='at' size='lg' />
                     <span className={style.companyName}>{this.props.companyName}</span>
                 </div>
-                <div className={style.date}>
+                <div className={style.dateBloc}>
                     <FontAwesome className={style.calendarIcon} name='calendar' size='lg' />
-                    <span >
-                        <span>{this.props.startDate}</span>
-                        <span className={style.dateDelimitor}>-</span> 
-                        <span className={isActual?style.actual:''}>{this.props.endDate}</span>
+                    <span>
+                        <span className={style.date}>{this.formatDate(this.props.startDate)}</span>
+                        <FontAwesome className={style.dateDelimitor} name='arrows-h' size='lg' />
+                        <span className={isActual?style.actual + ' ' + style.date:style.date}>{isActual?this.props.endDate:this.formatDate(this.props.endDate)}</span>
                     </span>
                 </div>
             </div>

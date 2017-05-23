@@ -53,7 +53,7 @@
             "companyName":"Thales services (Client: CEA)",
             "logo":"http://nanosaclay.fr/Images/Logos/logoCEA_en_quadri_rouge.jpg",
             "role" : "Réponse à appel d'offre",
-            "startDate":"2012-11",
+            "startDate":"2012-10",
             "endDate":"2012-12",
             "mission":["Refonte d'une application réalisée en Matlab", "Recherche, Proposition de solutions techniques", " Réalisation d'un prototype", " Réalisation de compartifs technologiques"],
             "environnementTechnique":["UML", "design pattern", "JavaFx", "Swing", "GWT", "JQuery"]
@@ -63,7 +63,7 @@
             "logo": "http://www.lemansdeveloppement.fr/wp-content/uploads/2016/02/logo-INFOtel.png",
             "role" : "Stagiaire",
             "startDate":"2012-02",
-            "endDate":"2012-07",
+            "endDate":"2012-08",
             "mission":["Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type", " Réalisation du projet de la veille technique à sa démonstration", "Développement d'un plugin Firefox"],
             "environnementTechnique":["Spring", "Hibernate", "Selenium", "RabbitMQ", "MySQL", "Maven", "Git"]
         },

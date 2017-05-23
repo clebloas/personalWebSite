@@ -1,10 +1,9 @@
 import React from 'react';
-import ColorBlock from '../ColorBlock/ColorBlock';
 import style from './style.css';
 import FontAwesome from 'react-fontawesome';
 
-class ProfessionnalSkills extends ColorBlock {
-    renderContent() {
+class ProfessionnalSkills extends React.Component {
+    render() {
         var comps=[
             {type:'Java', eval:'80%'},
             {type:'Spring', eval:'70%'},

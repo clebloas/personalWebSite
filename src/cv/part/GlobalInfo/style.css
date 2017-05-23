@@ -1,6 +1,6 @@
 .global{
-    padding: 2em;
-    padding-bottom: 1em;
+    padding: 1em;
+    padding-bottom: 0.5em;
 }
 .infos{
     border-bottom: 1px solid #ced7db;

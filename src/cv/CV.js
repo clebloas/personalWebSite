@@ -1,68 +1,38 @@
 import React, {Component} from 'react';
 import GlobalInfo from './part/GlobalInfo/GlobalInfo';
-//import Title from './part/Title';
 import ProfessionalExperiences from './part/ProfessionalExperiences/ProfessionalExperiences';
 import Formations from './part/Formations/Formations';
-//import Skills from './part/Skills';
-//import PersonalActivities from './part/PersonalActivities'
 import Description from './part/Description/Description';
 import cvDatas from '../mycv.json';
 import './fonts.css';
-// import Menu from './menu/Menu';
 import style from './style.css';
 import List from './list/List';
 
 import gridview from './gridview.css';
 
 class CV extends Component {
-
-  constructor(props){
-    super(props);
-    this.state={activeContentId:"default", focusContentId:'default'};
-    this.handleChangeContent=this.handleChangeContent.bind(this);
-    this.handleFocusContent=this.handleFocusContent.bind(this);
-  }
-
-
   createContentList(){
     var expProfessionals = cvDatas.professionalExperiences;
     var formations = cvDatas.formations;
     return [
             <Description 
-              id='item_Description'
               key='item_Description'
-              menu_text='Description'
-              description={cvDatas.description}
-              focusContentId={this.state.focusContentId}/>,
+              description={cvDatas.description}/>,
             <ProfessionalExperiences
-              id='item_ProfessionalExperiences'
               expProfessionals={expProfessionals}
-              key='item_ProfessionalExperiences'
-              menu_text='Expériences'
-              focusContentId={this.state.focusContentId}/>,
+              key='item_ProfessionalExperiences'/>,
             <Formations 
-              id='item_Formations'
               formations={formations}
-              key='item_Formations'
-              menu_text='Formations'
-              focusContentId={this.state.focusContentId}/>
+              key='item_Formations'/>
     ];
   }
 
   renderContentList(contentList){
     return(
-          <List activeContentId={this.state.activeContentId}>
+          <List>
             {contentList}
           </List>
     );
-  }
-
-  handleChangeContent(contentId){
-    this.setState({activeContentId: contentId});
-  }
-
-  handleFocusContent(contentId){
-    this.setState({focusContentId: contentId});
   }
 
   render() {
@@ -75,14 +45,7 @@ class CV extends Component {
         globalInformations={cvDatas.globalInformations}
         menu_text='Général'
         title={cvDatas.title}/>
-      </div>  
-      {/*<div className={style.menu}>
-        <div className={style.menuContent}>
-          <Menu onChangeContentId={this.handleChangeContent} 
-            onMouseOver={this.handleFocusContent} 
-            list={contentList.concat([{props:{id:'default', menu_text:'Tout montrer'}}])}/>
-        </div>
-      </div>*/}
+      </div>
      
       <div className={gridview.colM7+ " "+ gridview.col7} >
         <div className={style.content}>
