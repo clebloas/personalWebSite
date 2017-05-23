@@ -14,7 +14,7 @@ class ProfessionalExperience extends Component {
             <div className={style.header}>
                 <div className={style.rolecompany}>
                     <span className={style.role}>{this.props.role}</span>
-                    <FontAwesome className={style.atIcon} name='at' size='lg' />
+                    <span className={style.atIcon}>@</span>
                     <span className={style.companyName}>{this.props.companyName}</span>
                 </div>
                 <div className={style.dateBloc}>

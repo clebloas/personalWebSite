@@ -62,7 +62,8 @@
 
 .icone{
     color: #455A64;
-    text-align: left;
+    text-align: center;
+    vertical-align: middle;
     width: 1em;
 }
 .externalLink{
