@@ -33,7 +33,7 @@ class ProfessionnalExperiences extends React.Component {
     render() {
         return (
             <ShadowBox>
-                <Title iconeName='briefcase' value='Expériences'/>
+                <Title iconeName='flask' value='Expériences'/>
                 <div className={style.organizer}>
                     <div>
                         {this.props.expProfessionals.slice(0,4).map((expPro, index) => 
