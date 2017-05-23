@@ -53,6 +53,8 @@
     margin-bottom:0;
     margin-top:0;
     padding-left: 0em;
+    color: #314047;
+
     list-style-type:none; 
 }
 .liste>li::before{
