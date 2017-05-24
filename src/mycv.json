@@ -37,7 +37,7 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2013-11",
             "endDate":"2014-04",
-            "mission":["Refonte de l'IHM d'une application réaliser en Java Lourd vers une application GWT avec une équipe de 8 personnes", " Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)"],
+            "mission":["Refonte de l'IHM d'une application réalisée en Java Lourd vers une application GWT avec une équipe de 8 personnes", " Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)"],
             "environnementTechnique":["Java", "GWT", "OSGi", "Karaf(interne)", "Spring", "Scrum", "Selenium", "Junit", "Clearcase", "Sonar", "Maven", "Jira", "Jenkins"]
         },
         {
