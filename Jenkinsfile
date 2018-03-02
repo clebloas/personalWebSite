@@ -13,4 +13,8 @@ node {
             sh "yarn build"
         }
     }
+    
+    stage("Build final image"){
+       def buildImage = docker.build("clebloascv:latest")
+    }
 }

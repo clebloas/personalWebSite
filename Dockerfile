@@ -1,9 +1,4 @@
-FROM node:latest
+FROM nginx:alpine
+COPY build/ /usr/share/nginx/html
 
-RUN npm install -g node-static
 
-ADD code/** .
-
-EXPOSE 8888
-
-ENTRYPOINT ["public",  "-a", "0.0.0.0", "-p", "8888"]
