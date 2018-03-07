@@ -7,11 +7,11 @@
         "email":"christopher.le_bloas@insa-rouen.fr",
         "dateOfBirth": "1988-03-02",
         "complementaryInformation":"Permis B",
-        "regions":"Haute-Normandie, Ile-de-France"
+        "regions":"Haute-Normandie"
     },
     "title": "Ingénieur développement logiciel",
     "title2": "Sens de l'écoute, travail en équipe, force de proposition",
-    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Spécialisé dans le Java (Spring), je reste curieux sur les stacks récentes front-end (React). J'attache beaucoup d'importance à la qualité du développement.",
+    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Spécialisé dans le Java (Spring), je suis ouvert à d'autres technologies. J'attache beaucoup d'importance à la qualité du développement notamment aux tests.",
     "professionalExperiences":[
         {
             "companyName":"Weekendesk",
@@ -19,8 +19,13 @@
             "role" : "Développeur Java",
             "startDate":"2015-07",
             "endDate":"Actuel",
-            "mission":["Réaliser la communication via API avec des partenaires externes", "Maintenir et faire évoluer un monolithe vers une architecture en microservice "],
-            "environnementTechnique":["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java"]
+            "mission":[
+		    "Réaliser la communication via API avec des partenaires externes"
+		    , "Maintenir et faire évoluer un monolithe vers une architecture en microservice"
+		    , "Définir et participer à la mise en place du deploiement continue d'application conteneurisée"
+		    , "Travail à distance depuis octobre 2017"
+	    ],
+            "environnementTechnique":["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java", "Spring", "Rabbitmq", "Aws", "Jenkins"]
         },
         {
             "companyName":"Thales services (Client: Thales Communication)",
@@ -28,7 +33,11 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2014-07",
             "endDate":"2015-03",
-            "mission":["Porter une architecture \"big endian\" vers une architecture \"little endian\" d'un système de radio en binôme", "Changement de l'environnement de compilation", "Préparation de l'environnement de test afin de s'assurer de la non-régression de l'application", "Réalisation d'un framework de test"],
+            "mission":[
+		    "Porter une architecture \"big endian\" vers une architecture \"little endian\" d'un système de radio en binôme"
+		    , "Changement de l'environnement de compilation"
+		    , "Préparation de l'environnement de test afin de s'assurer de la non-régression de l'application"
+		    , "Réalisation d'un framework de test"],
             "environnementTechnique":["C++", "QMake", "CMake", "Java", "JUnit", "Ant", "Bash", "Clearcase", "Klockwork", "Jira", "Jenkins"]
         },
         {
@@ -37,7 +46,9 @@
             "role" : "Développeur-Concepteur",
             "startDate":"2013-11",
             "endDate":"2014-04",
-            "mission":["Refonte de l'IHM d'une application réalisée en Java Lourd vers une application GWT avec une équipe de 8 personnes", " Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)"],
+            "mission":[
+		    "Refonte de l'IHM d'une application réalisée en Java Lourd vers une application GWT avec une équipe de 8 personnes"
+		    , " Réalisation des fonctionnalités (Conception, Développement, TU, TestIHM)"],
             "environnementTechnique":["Java", "GWT", "OSGi", "Karaf(interne)", "Spring", "Scrum", "Selenium", "Junit", "Clearcase", "Sonar", "Maven", "Jira", "Jenkins"]
         },
         {
@@ -46,7 +57,11 @@
             "role" : "MCO",
             "startDate":"2012-12",
             "endDate":"2013-10",
-            "mission":["Automatisation de tests d'intégration (5mois)", "Participation au chiffrage d'un autre périmètre de tests", " Traitement et correction de fait techniques", " Mise en place de l'environnement d'intégration continu avec pour objectif de le généraliser sur d'autres projets"],
+            "mission":[
+		    "Automatisation de tests d'intégration (5mois)"
+		    , "Participation au chiffrage d'un autre périmètre de tests"
+		    , " Traitement et correction de fait techniques"
+		    , " Mise en place de l'environnement d'intégration continu avec pour objectif de le généraliser sur d'autres projets"],
             "environnementTechnique":["Java", "Swing", "SVN", "Maven", "XVFB", "Sonar", "Nexus", "Jenkins"]
         },
         {
@@ -55,7 +70,11 @@
             "role" : "Réponse à appel d'offre",
             "startDate":"2012-10",
             "endDate":"2012-12",
-            "mission":["Refonte d'une application réalisée en Matlab", "Recherche, Proposition de solutions techniques", " Réalisation d'un prototype", " Réalisation de compartifs technologiques"],
+            "mission":[
+		    "Refonte d'une application réalisée en Matlab"
+		    , "Recherche, Proposition de solutions techniques"
+		    , " Réalisation d'un prototype"
+		    , " Réalisation de compartifs technologiques"],
             "environnementTechnique":["UML", "design pattern", "JavaFx", "Swing", "GWT", "JQuery"]
         },
         {
@@ -64,7 +83,10 @@
             "role" : "Stagiaire",
             "startDate":"2012-02",
             "endDate":"2012-08",
-            "mission":["Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type", " Réalisation du projet de la veille technique à sa démonstration", "Développement d'un plugin Firefox"],
+            "mission":[
+		    "Création et conception d'une application Web JavaJEE permettant à un utilisateur lambda de réaliser des tests fonctionnels sur des application du même type"
+		    , " Réalisation du projet de la veille technique à sa démonstration"
+		    , "Développement d'un plugin Firefox"],
             "environnementTechnique":["Spring", "Hibernate", "Selenium", "RabbitMQ", "MySQL", "Maven", "Git"]
         },
         {
@@ -73,7 +95,12 @@
             "role" : "Etudiant", 
             "startDate":"2011-01",
             "endDate":"2011-12",
-            "mission":["Réalisation d'une application certifié ISO9001:2008 pour la bibliothèque nationale George Pompidou", " Responsable qualité (Mises en place des exigeances qualités nécessaire)", " Réalisation d'uneapplication web permettant la localisation de média", " Définition et mise en place de la gestion des configurations", "Rédaction des spécifications, de la conception, DTD..."],
+            "mission":[
+		    "Réalisation d'une application certifié ISO9001:2008 pour la bibliothèque nationale George Pompidou"
+		    , " Responsable qualité (Mises en place des exigeances qualités nécessaire)"
+		    , " Réalisation d'uneapplication web permettant la localisation de média"
+		    , " Définition et mise en place de la gestion des configurations"
+		    , "Rédaction des spécifications, de la conception, DTD..."],
             "environnementTechnique":["JavaJEE", "Jetty", "SVN", "JQuery", "Cycle en V"]
         },
         {
@@ -105,7 +132,12 @@
             "role" : "Stagiaire", 
             "startDate":"2008-04",
             "endDate":"2008-06",
-            "mission":["Mis en place d'un réseau Wi-Fi sécurisé", "Identification des besoins", "Proposition de solutions", "Tests et mise en production", "Rédaction de documentation"]
+            "mission":[
+		    "Mis en place d'un réseau Wi-Fi sécurisé"
+		    , "Identification des besoins"
+		    , "Proposition de solutions"
+		    , "Tests et mise en production"
+		    , "Rédaction de documentation"]
         },
         {
             "companyName":"Technocom (Thuit Signol)",
@@ -157,7 +189,7 @@
             "skills":[
                 "Gestion de projet (temporelle, humaine, technique et financière",
                 "Sensibilisation à la qualité (norme ISO9001)",
-                "Modélisation UML, Design Pattern, IDEF0"
+                "Modélisation UML, Design Pattern, IDEF0, TDD, DDD, architecture hexagonale"
             ]
         },
         {
@@ -170,11 +202,11 @@
     "personnalActivities":[   
         {
             "title":"BasketBall",
-            "description":"pratique au niveau régional (10 années)"
+            "description":"pratique au niveau régional (12 années)"
         },
         {
             "title":"Photographie",
-            "description":"depuis 2ans",
+            "description":"quand l'occasion se présente",
             "url":"www.flickr.com/photos/120538664@N05"
         },
         {
@@ -183,7 +215,7 @@
         },
         {
             "title":"AJIR (Association Junior INSA Rouen)",
-            "description": "Réalisation d'une solution technique consitant à contrôler et programmer une malaxeuse de béton"
+            "description": "Réalisation d'une solution technique consistant à contrôler et programmer une malaxeuse de béton"
         }
     ]
 }
