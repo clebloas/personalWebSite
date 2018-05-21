@@ -1,4 +1,6 @@
 node {
+    properties([pipelineTriggers([[$class: 'GitHubPushTrigger'], pollSCM('H/2 * * * *')])])
+    
     stage("cleanup the mess") {
         deleteDir()
     }
