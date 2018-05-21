@@ -18,7 +18,7 @@ node {
        def buildImage = docker.build("clebloascv:latest")
     }
     
-    stage(""){
-        sh "docker-compose up -d --no-deps"
+    stage("Refresh running images"){
+        sh "cd; docker-compose up -d --no-deps"
     }
 }
