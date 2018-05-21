@@ -17,4 +17,8 @@ node {
     stage("Build final image"){
        def buildImage = docker.build("clebloascv:latest")
     }
+    
+    stage(""){
+        sh "docker-compose up -d --no-deps"
+    }
 }
