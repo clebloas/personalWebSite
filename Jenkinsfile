@@ -20,3 +20,4 @@ node {
        def buildImage = docker.build("clebloascv:latest")
     }
 }
+ 
