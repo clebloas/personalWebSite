@@ -9,23 +9,56 @@
         "complementaryInformation":"Permis B",
         "regions":"Haute-Normandie"
     },
-    "title": "Ingénieur développement logiciel",
+    "title": "Responsable technique et Chef de projet",
     "title2": "Sens de l'écoute, travail en équipe, force de proposition",
-    "description": "Bonjour ! Je suis développeur confirmé dans les technologies orientées back office avec une culture DevOps. Spécialisé dans le Java (Spring), je suis ouvert à d'autres technologies. J'attache beaucoup d'importance à la qualité du développement notamment aux tests.",
+    "description": "Bonjour ! Je suis un responsable technique et chef de projet qui aime particulièrement former, échanger, apprendre, faire évoluer une équipe, créer un produit de qualité. J'aime aussi instaurer une relation de confiance avec les clients.",
     "professionalExperiences":[
+        {
+            "companyName":"Enovea",
+            "logo" : "./logo/enovea",
+            "role" : "[CrystalRec] Tech lead & Chef de Projet (depuis janvier 2020)",
+            "startDate":"2018-08",
+            "endDate": "Actuel",
+            "mission": [
+                "Maintenir en condition opérationnelle un outil permettant de faire du matching, vendu à l'échelle mondiale (Banque, Brokers | Canada, Suède, Royaume-Uni, France)",
+                "Organiser et réaliser une refonte d'un client lourd vers un client léger",
+                "Redécoupage d'un code existant vers un découpage fonctionnel (approche Domain Driven Design) ",
+                "Former une équipe junior aux 'bonnes' pratiques de développement front et back et aux pratiques devops",
+                "Créer un environnement développement agile avec l'équipe",
+                "Réaliser des migrations de serveurs",
+                "Orienter les développements, et mettre en place le monitoring/alerting fonctionnel et technique pour que l'application puisse devenir scallable, SAAS",
+                "Définir le futur produit et la roadmap pour atteindre les objectifs",
+                "Mise en place d'une stratégie de tests automatisées"
+            ],
+            "environnementTechnique": ["Java", "Spring", "Maven", "Angular", "Ansible", "Jenkins", "Docker", "Jira", "Grafana", "Linux", "DDD"]
+        },
+        {
+            "companyName":"Enovea",
+            "logo" : "./logo/enovea",
+            "role" : "[Crystal Clear] Tech lead",
+            "startDate":"2018-08",
+            "endDate":"2020-01",
+            "mission":[
+                "Maintenir en condition opérationnelle un outil permettant de faire du matching et du clearing",
+                "Assurer le support technique et les exigeances temporelles dans un context anglophone",
+                "Assurer la communication entre l'application et différents marchés (ICE, Eurex, CME...)",
+                "Faire évoluer un autre produit [Crystalrec]"
+            ],
+            "environnementTechnique": ["Java", ".Net/C#", "RabbitMQ", "Multiple API"]
+        },
         {
             "companyName":"Weekendesk",
             "logo" : "./logo/weekendesk",
             "role" : "Développeur Java",
             "startDate":"2015-07",
-            "endDate":"Actuel",
+            "endDate":"2018-08",
             "mission":[
-		    "Réaliser la communication via API avec des partenaires externes"
-		    , "Maintenir et faire évoluer un monolithe vers une architecture en microservice"
-		    , "Définir et participer à la mise en place du deploiement continue d'application conteneurisée"
-		    , "Travail à distance depuis octobre 2017"
-	    ],
-            "environnementTechnique":["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java", "Spring", "Rabbitmq", "Aws", "Jenkins"]
+                "Réaliser la communication via API avec des partenaires externes"
+                , "Maintenir et faire évoluer un monolithe vers une architecture en microservice"
+                , "Définir et participer à la mise en place du deploiement continue d'application conteneurisée"
+                , "Travail à distance depuis octobre 2017"
+            ],
+            "environnementTechnique": ["Docker", "Kubernetes", "Jira", "Spring", "Spinnaker", "Assertj", "Cucumber", "Maven", "Java", "Rabbitmq", "Aws", "Jenkins"]
         },
         {
             "companyName":"Thales services (Client: Thales Communication)",
